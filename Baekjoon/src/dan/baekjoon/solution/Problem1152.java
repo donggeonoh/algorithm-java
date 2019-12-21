@@ -8,7 +8,7 @@
  *  SOLVED!!!
  */
 
-package dan.baekjoon.algorithms;
+package dan.baekjoon.solution;
 
 import java.util.Scanner;
 

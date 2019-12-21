@@ -8,7 +8,7 @@
  *  SOLVED!!!
  */
 
-package dan.leetcode.algorithms;
+package dan.leetcode.solution;
 
 public class Problem657 {
 

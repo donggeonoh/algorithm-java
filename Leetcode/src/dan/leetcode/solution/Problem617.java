@@ -8,7 +8,10 @@
  *  SOLVED!!!
  */
 
-package dan.leetcode.algorithms;
+package dan.leetcode.solution;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Problem617 {
 
@@ -101,6 +104,32 @@ class Solution617 {
             mergeNode.right = new TreeNode(0);
             merge(mergeNode.right, t.right);
         }
+    }
+}
+
+class Solution {
+    public String[] solution(String[] strings, int n) {
+        String[] answer = {};
+
+        if(strings == null || n < 1) {
+            return null;
+        }
+
+        int length = strings.length;
+
+        for(int i = 0; i < length; i++) {
+            for(int j = i + 1; j < length; j++) {
+                if(strings[i].charAt(n) > strings[j].charAt(n)) {
+                    String temp = strings[i];
+                    strings[i] = strings[j];
+                    strings[j] = temp;
+                }
+            }
+        }
+
+        answer = strings;
+
+        return answer;
     }
 }
 
