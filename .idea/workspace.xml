@@ -1,48 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b4b74d-c006-4807-b942-e5b3e7ffe60f" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="55b4b74d-c006-4807-b942-e5b3e7ffe60f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_sort_strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_sort_strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Problem1152.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Problem1193.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Solution1193.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_1/Report1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_1/Report1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/MergeSortClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/MergeSortClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/QuickSortClass1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/QuickSortClass1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/Report2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/Report2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Huffman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Huffman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem617.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem657.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem728.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem771.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem807.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem832.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem852.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem905.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem929.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem942.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem977.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution617.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution657.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution728.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution771.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution807.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution832.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution852.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution905.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution929.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution942.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution977.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/TreeNode.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_4/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/Huffman.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,151 +68,37 @@
       </list>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/dan/lecture/algorithms_Report_4/Main.java" />
-        <option value="$PROJECT_DIR$/src/dan/lecture/algorithms_Report_1/Report1.java" />
-        <option value="$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/Main.java" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+  <component name="ProjectId" id="1VIEw6z9VJCynLSsbwRHkmitiHW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dan" type="462c0819:PsiDirectoryNode" />
-              <item name="lecture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dan" type="462c0819:PsiDirectoryNode" />
-              <item name="lecture" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms_Report_4" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Algorithm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lecture" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lecture" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="algorithms_Report_4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Algorithm" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Algorithm" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Algorithm" type="616d4139:PackageViewModuleNode" />
-              <item name="dan" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Algorithm" type="616d4139:PackageViewModuleNode" />
-              <item name="dan" type="1f31426a:PackageElementNode" />
-              <item name="baekjoon.algorithms" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558241077625" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.lecture.algorithms_Report_3.Main" />
-      <module name="Algorithm" />
+  <component name="RunManager" selected="Application.Problem617">
+    <configuration name="Problem1152" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1152" />
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.lecture.algorithms_Report_3.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,12 +106,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.lecture.algorithms_Report_4.Main" />
+    <configuration name="Problem1193" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1193" />
+      <module name="Baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem617" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.leetcode.solution.Problem617" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dan.leetcode.solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Report2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.lecture.algorithms_Report_2.Report2" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.lecture.algorithms_Report_4.*" />
+          <option name="PATTERN" value="dan.lecture.algorithms_Report_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution_level_1_sort_strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.Solution_level_1_sort_strings" />
+      <module name="Programmers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dan.programmers.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,13 +160,28 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Problem617" />
+        <item itemvalue="Application.Solution_level_1_sort_strings" />
+        <item itemvalue="Application.Problem1193" />
+        <item itemvalue="Application.Problem1152" />
+        <item itemvalue="Application.Report2" />
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -236,127 +193,70 @@
       <workItem from="1558239065120" duration="1113000" />
       <workItem from="1558240272977" duration="165000" />
       <workItem from="1558240471226" duration="622000" />
+      <workItem from="1576932447484" duration="66000" />
+      <workItem from="1576932682616" duration="132000" />
+      <workItem from="1576932882190" duration="1026000" />
+      <workItem from="1576995682482" duration="1540000" />
+      <workItem from="1576997671357" duration="672000" />
+      <workItem from="1576999116841" duration="2308000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1900000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="68" y="20" width="1400" height="784" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32668713" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_2/MergeSortClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/baekjoon/algorithms/Problem1193.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_1/Report1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/baekjoon/algorithms/Problem1152.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/HuffmanTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_4/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dan/lecture/algorithms_Report_3/Huffman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="440" y="190" key="#Inspections" timestamp="1576932320011">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#Inspections/0.0.1680.1050@0.0.1680.1050" timestamp="1576932320011" />
+    <state x="440" y="190" key="#Project_Structure" timestamp="1576996544337">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1576996544337" />
+    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576932332797">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1576932332797" />
+    <state x="496" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577001553187">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="496" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1577001553187" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1576996772179">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1576996772179">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1576996772178">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772178" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1576996772179">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
+    <state x="452" y="225" key="NewModule_or_Project.wizard" timestamp="1576932754053">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="452" y="225" key="NewModule_or_Project.wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1576932754053" />
+    <state x="309" y="167" key="SettingsEditor" timestamp="1576998258732">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="309" y="167" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1576998258732" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1576933542100">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1576933542100" />
+    <state x="217" y="147" key="new project wizard" timestamp="1576933352367">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="217" y="147" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1576933352367" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1576998298277">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1576998298277" />
   </component>
 </project>
