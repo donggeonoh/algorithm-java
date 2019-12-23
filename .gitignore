@@ -94,6 +94,8 @@ local.properties
 **/*.idea
 **/*.iml
 **/*.ipr
+.idea
+*.iml
 
 # CMake
 cmake-build-*/
@@ -103,6 +105,7 @@ cmake-build-*/
 
 # IntelliJ
 **/out/
+/out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

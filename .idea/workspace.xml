@@ -1,65 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b4b74d-c006-4807-b942-e5b3e7ffe60f" name="Default Changelist" comment="">
+    <list default="true" id="4ba0f62b-3a58-4fc5-bb71-8b1cfb347bd9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_sort_strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_sort_strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Problem1152.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Problem1193.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/baekjoon/algorithms/Solution1193.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_1/Report1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_1/Report1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/MergeSortClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/MergeSortClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/QuickSortClass1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/QuickSortClass1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/Report2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_2/Report2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Huffman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Huffman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/HuffmanTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/dan/lecture/algorithms_Report_4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem617.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem657.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem728.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem771.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem807.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem832.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem852.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem905.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem929.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem942.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Problem977.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution617.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution657.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution728.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution771.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution807.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution832.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution852.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution905.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution929.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution942.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/Solution977.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dan/leetcode/algorithms/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_dart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/level1/Solution_level_1_dart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/Solution_level_1_sort_strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/level1/Solution_level_1_sort_strings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1VIEw6z9VJCynLSsbwRHkmitiHW" />
+  <component name="ProjectId" id="1VKZXnxkToTHzgEEXhqHy1tJPeq" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -84,73 +37,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558241077625" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
-  <component name="RunManager" selected="Application.Problem617">
-    <configuration name="Problem1152" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1152" />
-      <module name="Baekjoon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dan.baekjoon.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem1193" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1193" />
-      <module name="Baekjoon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dan.baekjoon.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem617" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.leetcode.solution.Problem617" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dan.leetcode.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Report2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.lecture.algorithms_Report_2.Report2" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dan.lecture.algorithms_Report_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution_level_1_sort_strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.Solution_level_1_sort_strings" />
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.hash.Main" />
       <module name="Programmers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.programmers.solution.*" />
+          <option name="PATTERN" value="dan.programmers.solution.hash.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +54,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Problem617" />
-        <item itemvalue="Application.Solution_level_1_sort_strings" />
-        <item itemvalue="Application.Problem1193" />
-        <item itemvalue="Application.Problem1152" />
-        <item itemvalue="Application.Report2" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -181,24 +71,17 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="55b4b74d-c006-4807-b942-e5b3e7ffe60f" name="Default Changelist" comment="" />
-      <created>1558239060931</created>
+      <changelist id="4ba0f62b-3a58-4fc5-bb71-8b1cfb347bd9" name="Default Changelist" comment="" />
+      <created>1577003788606</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558239060931</updated>
-      <workItem from="1558239065120" duration="1113000" />
-      <workItem from="1558240272977" duration="165000" />
-      <workItem from="1558240471226" duration="622000" />
-      <workItem from="1576932447484" duration="66000" />
-      <workItem from="1576932682616" duration="132000" />
-      <workItem from="1576932882190" duration="1026000" />
-      <workItem from="1576995682482" duration="1540000" />
-      <workItem from="1576997671357" duration="672000" />
-      <workItem from="1576999116841" duration="2308000" />
+      <updated>1577003788606</updated>
+      <workItem from="1577003791344" duration="422000" />
+      <workItem from="1577101032202" duration="1672000" />
     </task>
     <servers />
   </component>
@@ -206,57 +89,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#Inspections" timestamp="1576932320011">
+    <state width="1638" height="299" key="GridCell.Tab.0.bottom" timestamp="1577102910541">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#Inspections/0.0.1680.1050@0.0.1680.1050" timestamp="1576932320011" />
-    <state x="440" y="190" key="#Project_Structure" timestamp="1576996544337">
+    <state width="1638" height="299" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577102910541" />
+    <state width="1638" height="299" key="GridCell.Tab.0.center" timestamp="1577102910539">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1576996544337" />
-    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576932332797">
+    <state width="1638" height="299" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577102910539" />
+    <state width="1638" height="299" key="GridCell.Tab.0.left" timestamp="1577102910538">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1576932332797" />
-    <state x="496" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577001553187">
+    <state width="1638" height="299" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577102910538" />
+    <state width="1638" height="299" key="GridCell.Tab.0.right" timestamp="1577102910540">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="496" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1577001553187" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1576996772179">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1576996772179">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1576996772178">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772178" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1576996772179">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576996772179" />
-    <state x="452" y="225" key="NewModule_or_Project.wizard" timestamp="1576932754053">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="452" y="225" key="NewModule_or_Project.wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1576932754053" />
-    <state x="309" y="167" key="SettingsEditor" timestamp="1576998258732">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="309" y="167" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1576998258732" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1576933542100">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1576933542100" />
-    <state x="217" y="147" key="new project wizard" timestamp="1576933352367">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="217" y="147" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1576933352367" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1576998298277">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1576998298277" />
+    <state width="1638" height="299" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577102910540" />
   </component>
 </project>

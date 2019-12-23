@@ -1,10 +1,10 @@
-package dan.programmers.solution;
+package dan.programmers.solution.level1;
 
 /*
  * Date : 2019-12-22
  * Auth : Oh Dong-geon
- * Description : ¹®ÀÚ¿­ ¹è¿­¿¡¼­ n¿¡ ÇØ´çÇÏ´Â index·Î ¹®ÀÚ¿­ ¹è¿­À» Á¤·ÄÇÑ´Ù.
- *               ¸¸¾à °°Àº °æ¿ì »çÀü¼øÀ¸·Î Á¤·Ä.
+ * Description : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½è¿­ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ indexï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+ *               ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
  */
 
 class Solution_level_1_sort_strings {
