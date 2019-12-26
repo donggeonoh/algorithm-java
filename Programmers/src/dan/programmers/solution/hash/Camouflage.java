@@ -37,12 +37,19 @@ class CamouflageSolution {
             }
         }
 
+        int result = 1;
         for(int i = 0; i < typeList.size(); i++) {
-            answer += h.get(typeList.get(i)).size();
-            for(int j = i + 1; j < typeList.size(); j++) {
-                int temp = h.get(typeList.get(i)).size() * h.get(typeList.get(j)).size();
-                answer += temp;
+            result *= h.get(typeList.get(0)).size();
+        }
+
+        for(int i = typeList.size(); i > 0; i--) {
+            int index = 1;
+
+            for(int k = i; k > 0; k--) {
+                index *= k;
             }
+
+            answer += result / index;
         }
 
         System.out.println(answer);
