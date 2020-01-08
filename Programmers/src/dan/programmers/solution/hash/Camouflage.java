@@ -1,7 +1,12 @@
 package dan.programmers.solution.hash;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+
+/*
+ * Date : 2019-12-25
+ * Auth : Oh Dong-geon
+ * Description : 프로그래머스 위장 문제 솔루션입니다.
+ */
 
 class Camouflage {
 
@@ -14,44 +19,23 @@ class Camouflage {
 
 class CamouflageSolution {
     public int solution(String[][] clothes) {
-        HashMap<String, ArrayList<String>> h = new HashMap<>();
-        ArrayList<String> typeList = new ArrayList<>();
-        int answer = 0;
+        HashMap<String, Integer> h = new HashMap<>();
+        int answer = 1;
 
-        for (String[] cloth : clothes) {
-            int innerLength = cloth.length;
-            String type = cloth[innerLength - 1];
-
-            for (int j = 0; j < innerLength - 1; j++) {
-                if (h.get(type) == null) {
-                    ArrayList<String> clothList = new ArrayList<>();
-                    clothList.add(cloth[j]);
-                    typeList.add(type);
-
-                    h.put(type, clothList);
-                    continue;
-                }
-                ArrayList<String> clothList = h.get(type);
-                clothList.add(cloth[j]);
-                h.put(type, clothList);
+        for(String[] cloth : clothes) {
+            if(h.containsKey(cloth[1])) {
+                h.replace(cloth[1], h.get(cloth[1]) + 1);
+            }
+            else {
+                h.put(cloth[1], 1);
             }
         }
 
-        int result = 1;
-        for(int i = 0; i < typeList.size(); i++) {
-            result *= h.get(typeList.get(0)).size();
+        for(int value : h.values()) {
+            answer *= (value + 1);
         }
 
-        for(int i = typeList.size(); i > 0; i--) {
-            int index = 1;
-
-            for(int k = i; k > 0; k--) {
-                index *= k;
-            }
-
-            answer += result / index;
-        }
-
+        answer -= 1;
         System.out.println(answer);
 
         return answer;

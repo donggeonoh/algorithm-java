@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ba0f62b-3a58-4fc5-bb71-8b1cfb347bd9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/hash/BestAlbum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/hash/BestAlbum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/hash/Camouflage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/dan/programmers/solution/hash/Camouflage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
-  <component name="RunManager" selected="Application.BestAlbum">
+  <component name="RunManager" selected="Application.Tower">
     <configuration name="BestAlbum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.hash.BestAlbum" />
       <module name="Programmers" />
@@ -79,10 +80,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.stackandqueue.Tower" />
+      <module name="Programmers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dan.programmers.solution.stackandqueue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BestAlbum" />
+        <item itemvalue="Application.Tower" />
         <item itemvalue="Application.Camouflage" />
+        <item itemvalue="Application.BestAlbum" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -113,7 +128,8 @@
       <workItem from="1577101032202" duration="2038000" />
       <workItem from="1577276860059" duration="939000" />
       <workItem from="1577278545362" duration="5874000" />
-      <workItem from="1577363269503" duration="1359000" />
+      <workItem from="1577363269503" duration="1607000" />
+      <workItem from="1578464675788" duration="6442000" />
     </task>
     <servers />
   </component>
@@ -121,22 +137,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="299" key="GridCell.Tab.0.bottom" timestamp="1577364682127">
+    <state width="1638" height="299" key="GridCell.Tab.0.bottom" timestamp="1578474192451">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="299" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577364682127" />
-    <state width="1638" height="299" key="GridCell.Tab.0.center" timestamp="1577364682125">
+    <state width="1638" height="299" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578474192451" />
+    <state width="1638" height="299" key="GridCell.Tab.0.center" timestamp="1578474192450">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="299" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577364682125" />
-    <state width="1638" height="299" key="GridCell.Tab.0.left" timestamp="1577364682123">
+    <state width="1638" height="299" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578474192450" />
+    <state width="1638" height="299" key="GridCell.Tab.0.left" timestamp="1578474192449">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="299" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577364682123" />
-    <state width="1638" height="299" key="GridCell.Tab.0.right" timestamp="1577364682126">
+    <state width="1638" height="299" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578474192449" />
+    <state width="1638" height="299" key="GridCell.Tab.0.right" timestamp="1578474192451">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="299" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577364682126" />
+    <state width="1638" height="299" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578474192451" />
+    <state width="1638" height="367" key="GridCell.Tab.1.bottom" timestamp="1578473695020">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="367" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578473695020" />
+    <state width="1638" height="367" key="GridCell.Tab.1.center" timestamp="1578473695019">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="367" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578473695019" />
+    <state width="1638" height="367" key="GridCell.Tab.1.left" timestamp="1578473695018">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="367" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578473695018" />
+    <state width="1638" height="367" key="GridCell.Tab.1.right" timestamp="1578473695019">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="367" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578473695019" />
     <state x="447" y="65" key="SettingsEditor" timestamp="1577364639000">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
