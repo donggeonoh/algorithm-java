@@ -9,18 +9,7 @@ package dan.programmers.solution.level1;
  *
  */
 
-class Main {
-    public static void main(String[] args) {
-        Solution_level_1_dart solution_level_1_dart = new Solution_level_1_dart();
-        String test = "1S2D*3T#";
-
-        solution_level_1_dart.solution(test);
-
-    }
-}
-
-class Solution_level_1_dart {
-
+class Dart {
     public int solution(String dartResult) {
         int num[] = new int[3];
         int answer = 0;

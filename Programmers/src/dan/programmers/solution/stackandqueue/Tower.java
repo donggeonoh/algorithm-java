@@ -21,6 +21,9 @@ class TowerSolution {
             answer[i] = 0;
         }
 
+        String str = "";
+        str += 'a';
+
         for(int i = tower.size() - 1; !tower.isEmpty(); i--) {
             int height = tower.pop();
 
