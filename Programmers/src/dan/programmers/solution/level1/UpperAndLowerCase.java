@@ -6,7 +6,6 @@ package dan.programmers.solution.level1;
  * Description : 띄어쓰기로 단어가 구분되고, 각 단어마다 홀수 번째 문자는 대문자, 짝수번째 문자는 소문자로 바꾸는 문제입니다.
  */
 
-
 public class UpperAndLowerCase {
     public String solution(String s) {
         String answer = "";
