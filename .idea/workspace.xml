@@ -32,22 +32,26 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Solution">
-    <configuration name="BestAlbum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.hash.BestAlbum" />
-      <module name="Programmers" />
+  <component name="RunManager" selected="Application.Problem1152">
+    <configuration name="Problem1152" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1152" />
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.programmers.solution.hash.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Camouflage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.hash.Camouflage" />
-      <module name="Programmers" />
+    <configuration name="Problem1193" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem1193" />
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.programmers.solution.hash.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,52 +72,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.hash.Main" />
-      <module name="Programmers" />
+    <configuration name="Problem17136" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.programmers.solution.hash.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dan.baekjoon.solution" />
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem17136" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.expertacademy.solution.Solution" />
-      <module name="SWExpertAcademy" />
+    <configuration name="Problem17136Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.expertacademy.solution.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dan.baekjoon.solution" />
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem17136Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dan.programmers.solution.stackandqueue.Tower" />
-      <module name="Programmers" />
+    <configuration name="Problem17136Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dan.programmers.solution.stackandqueue.*" />
+          <option name="PATTERN" value="dan.baekjoon.solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dan.baekjoon.solution" />
+      <option name="MAIN_CLASS_NAME" value="dan.baekjoon.solution.Problem17136Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Tower" />
-        <item itemvalue="Application.Camouflage" />
-        <item itemvalue="Application.BestAlbum" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Problem1152" />
+        <item itemvalue="Application.Problem1193" />
+        <item itemvalue="JUnit.Problem17136Test" />
+        <item itemvalue="JUnit.Problem17136Test.test" />
+        <item itemvalue="JUnit.Problem17136" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +159,8 @@
       <workItem from="1578651060474" duration="1575000" />
       <workItem from="1580638927532" duration="27000" />
       <workItem from="1580983377314" duration="707000" />
-      <workItem from="1580987686623" duration="5903000" />
+      <workItem from="1580987686623" duration="6052000" />
+      <workItem from="1581079373868" duration="3398000" />
     </task>
     <servers />
   </component>
@@ -156,46 +168,54 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="468" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580999330105">
+    <state x="440" y="190" key="#Project_Structure" timestamp="1581081774903">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="468" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580999330105" />
-    <state width="1638" height="368" key="GridCell.Tab.0.bottom" timestamp="1581001146534">
+    <state x="440" y="190" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1581081774903" />
+    <state x="468" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581082159901">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581001146534" />
-    <state width="1638" height="368" key="GridCell.Tab.0.center" timestamp="1581001146532">
+    <state x="468" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581082159901" />
+    <state width="1638" height="368" key="GridCell.Tab.0.bottom" timestamp="1581084032594">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581001146532" />
-    <state width="1638" height="368" key="GridCell.Tab.0.left" timestamp="1581001146531">
+    <state width="1638" height="368" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581084032594" />
+    <state width="1638" height="368" key="GridCell.Tab.0.center" timestamp="1581084032591">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581001146531" />
-    <state width="1638" height="368" key="GridCell.Tab.0.right" timestamp="1581001146533">
+    <state width="1638" height="368" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581084032591" />
+    <state width="1638" height="368" key="GridCell.Tab.0.left" timestamp="1581084032588">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581001146533" />
-    <state width="1638" height="367" key="GridCell.Tab.1.bottom" timestamp="1581000260748">
+    <state width="1638" height="368" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581084032588" />
+    <state width="1638" height="368" key="GridCell.Tab.0.right" timestamp="1581084032592">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="367" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581000260748" />
-    <state width="1638" height="367" key="GridCell.Tab.1.center" timestamp="1581000260747">
+    <state width="1638" height="368" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581084032592" />
+    <state width="1638" height="367" key="GridCell.Tab.1.bottom" timestamp="1581001274081">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="367" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581000260747" />
-    <state width="1638" height="367" key="GridCell.Tab.1.left" timestamp="1581000260746">
+    <state width="1638" height="367" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581001274081" />
+    <state width="1638" height="367" key="GridCell.Tab.1.center" timestamp="1581001274079">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="367" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581000260746" />
-    <state width="1638" height="367" key="GridCell.Tab.1.right" timestamp="1581000260748">
+    <state width="1638" height="367" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581001274079" />
+    <state width="1638" height="367" key="GridCell.Tab.1.left" timestamp="1581001274078">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="367" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581000260748" />
-    <state x="447" y="65" key="SettingsEditor" timestamp="1580983634491">
+    <state width="1638" height="367" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581001274078" />
+    <state width="1638" height="367" key="GridCell.Tab.1.right" timestamp="1581001274080">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="447" y="65" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1580983634491" />
+    <state width="1638" height="367" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581001274080" />
+    <state x="447" y="65" key="SettingsEditor" timestamp="1581081744064">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="447" y="65" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1581081744064" />
+    <state x="544" y="426" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581081789420">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="544" y="426" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1050@0.0.1680.1050" timestamp="1581081789420" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1577280057607">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
