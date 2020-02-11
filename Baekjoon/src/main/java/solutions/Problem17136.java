@@ -1,15 +1,19 @@
 package solutions;
 
+import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
+import com.sun.tools.javac.util.ArrayUtils;
+
 class Problem17136 {
 
-    int result = 0;
+    private final int NO_ANSWER = -1;
+    int answer = 0;
 
     public int solution(int[][] testcase) {
         int[] paper = {5, 5, 5, 5, 5};
-        return getResult(testcase, paper);
+        return getResult(testcase, paper, 0);
     }
 
-    private int getResult(int[][] testcase, int[] paper) {
+    private int getResult(int[][] testcase, int[] paper, int result) {
 
         int size = 5;
 
@@ -17,27 +21,66 @@ class Problem17136 {
             for (int j = 0; j < testcase[i].length; j++) {
                 for(int k = size; k > 0; k--) {
                     if (testcase[i][j] == 1) {
-                        if (i + k > testcase.length || j + k > testcase.length) {
+                        if (i + k > testcase.length || j + k > testcase[i].length) {
                             continue;
                         }
-                        int[][] temp = testcase;
-                        int[] tempPaper = paper;
-                        tempPaper[k - 1]--;
 
-                        for (int m = i; m < i + size; m++) {
-                            for (int o = j; o < j + size; o++) {
-                                temp[m][o] = 0;
+                        int m = 0, o = 0;
+                        for(m = i; m < i + k; m++) {
+                            for(o = j; o < j + k; o++) {
+                                if(testcase[m][o] == 0) {
+                                    break;
+                                }
+                            }
+                            if(o != (j + k)) {
+                                break;
                             }
                         }
 
-                        getResult(testcase, paper);
+                        if(m != i + k || o != j + k) {
+                            continue;
+                        }
+                        if(paper[k - 1] - 1 == NO_ANSWER) {
+                            return NO_ANSWER;
+                        }
+                        else {
+                            for (m = i; m < i + k; m++) {
+                                for (o = j; o < j + k; o++) {
+                                    testcase[m][o] = 0;
+                                }
+                            }
+                            paper[k - 1]--;
+
+                            getResult(testcase, paper, result + 1);
+
+                            for (m = i; m < i + k; m++) {
+                                for (o = j; o < j + k; o++) {
+                                    testcase[m][o] = 1;
+                                }
+                            }
+                            paper[k - 1]++;
+                        }
                     }
                 }
-                testcase[i][j] = 0;
             }
         }
 
-        return 0;
+        if(result == NO_ANSWER) {
+            answer = result;
+        }
+        else if(result < answer || answer == 0) {
+            answer = result;
+            System.out.println();
+            for(int j = 0; j < 10; j++) {
+                for (int k = 0; k < 10; k++) {
+                    System.out.print(testcase[j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+        return answer;
     }
 
     /*

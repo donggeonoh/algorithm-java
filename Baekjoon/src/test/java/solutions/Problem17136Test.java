@@ -37,13 +37,15 @@ public class Problem17136Test {
             for(int j = 0; j < 10; j++) {
                 for (int k = 0; k < 10; k++) {
                     testcase[j][k] = scanner.nextInt();
+                    System.out.print(testcase[j][k] + " ");
                 }
+                System.out.println();
             }
             Problem17136 problem = new Problem17136();
-            int result = problem.solution();
+            int result = problem.solution(testcase);
             int answer = scanner.nextInt();
+            System.out.println("result : " + result + " answer : " + answer);
             assertEquals(answer, result);
         }
-
     }
 }
