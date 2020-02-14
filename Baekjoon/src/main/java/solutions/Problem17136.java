@@ -2,15 +2,19 @@ package solutions;
 
 class Problem17136 {
 
+    private int[][] testcase;
+    private int[] paper = {5, 5, 5, 5, 5};
+
     private final int NO_ANSWER = -1;
-    int answer = Integer.MAX_VALUE;
+    int answer = 0;
+    int result = 0;
 
     public int solution(int[][] testcase) {
         int[] paper = {5, 5, 5, 5, 5};
-        return getResult(testcase, paper, 0);
+        return getResult(testcase, paper);
     }
 
-    private int getResult(int[][] testcase, int[] paper, int result) {
+    private int getResult(int[][] testcase, int[] paper) {
 
         int size = 5;
 
@@ -34,14 +38,8 @@ class Problem17136 {
                             }
                         }
 
-                        if (m != i + k || o != j + k) {
+                        if (m != i + k || o != j + k || paper[k - 1] == 0) {
                             continue;
-                        }
-
-                        if(paper[k - 1] == 0) {
-                            if(answer == 0) {
-                                answer = Integer.MAX_VALUE;
-                            }
                         }
 
                         for (m = i; m < i + k; m++) {
@@ -50,8 +48,9 @@ class Problem17136 {
                             }
                         }
                         paper[k - 1]--;
+                        result++;
 
-                        getResult(testcase, paper, ++result);
+                        return getResult(testcase, paper);
 
                         for (m = i; m < i + k; m++) {
                             for (o = j; o < j + k; o++) {
@@ -59,25 +58,13 @@ class Problem17136 {
                             }
                         }
                         paper[k - 1]++;
+                        result--;
+
                     }
                 }
             }
         }
 
-        if (result < answer) {
-            answer = result;
-        }
-
         return answer;
-    }
-
-    private void print(int[][] testcase) {
-        System.out.println("testcase : ");
-        for (int j = 0; j < 10; j++) {
-            for (int k = 0; k < 10; k++) {
-                System.out.print(testcase[j][k] + " ");
-            }
-            System.out.println();
-        }
     }
 }
