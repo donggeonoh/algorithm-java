@@ -2,26 +2,28 @@ package solutions;
 
 class Problem17136 {
 
-    private int[][] testcase;
-    private int[] paper = {5, 5, 5, 5, 5};
-
-    private final int NO_ANSWER = -1;
-    int answer = 0;
+    int answer = Integer.MAX_VALUE;
     int result = 0;
 
     public int solution(int[][] testcase) {
         int[] paper = {5, 5, 5, 5, 5};
-        return getResult(testcase, paper);
+
+        getResult(testcase, paper);
+
+        if (answer == Integer.MAX_VALUE) {
+            answer = -1;
+        }
+        return answer;
     }
 
-    private int getResult(int[][] testcase, int[] paper) {
+    private void getResult(int[][] testcase, int[] paper) {
 
         int size = 5;
 
         for (int i = 0; i < testcase.length; i++) {
             for (int j = 0; j < testcase[i].length; j++) {
-                for (int k = size; k > 0; k--) {
-                    if (testcase[i][j] == 1) {
+                if (testcase[i][j] == 1) {
+                    for (int k = size; k > 0; k--) {
                         if (i + k > testcase.length || j + k > testcase[i].length) {
                             continue;
                         }
@@ -50,7 +52,7 @@ class Problem17136 {
                         paper[k - 1]--;
                         result++;
 
-                        return getResult(testcase, paper);
+                        getResult(testcase, paper);
 
                         for (m = i; m < i + k; m++) {
                             for (o = j; o < j + k; o++) {
@@ -59,12 +61,14 @@ class Problem17136 {
                         }
                         paper[k - 1]++;
                         result--;
-
                     }
+                    return;
                 }
             }
         }
 
-        return answer;
+        if (result < answer) {
+            answer = result;
+        }
     }
 }
