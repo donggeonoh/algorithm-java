@@ -44,7 +44,7 @@ public class Problem1967 {
     }
 
     private MyNode nextNode() {
-
+        return null;
     }
 
 
