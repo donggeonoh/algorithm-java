@@ -1,15 +1,14 @@
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/sort-array-by-parity/
  *  Date    : 2019-03-06
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem905 {
 
 	public static void main(String[] args) {

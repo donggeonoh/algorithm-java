@@ -1,17 +1,17 @@
+
+package solutions;
+
+import java.util.Arrays;
+
 /*
  *  Problem : https://leetcode.com/problems/squares-of-a-sorted-array/
  *  Date    : 2019-03-06
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
-import java.util.Arrays;
-
 public class Problem977 {
 
 	public static void main(String[] args) {

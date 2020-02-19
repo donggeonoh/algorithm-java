@@ -1,17 +1,18 @@
+
+
+package solutions;
+
+import java.util.Scanner;
+
 /*
  *  Problem : https://www.acmicpc.net/problem/1193
  *  Date    : 2019-03-21
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
-import java.util.Scanner;
-
 public class Problem1193 {
 
 	public static void main(String[] args) {

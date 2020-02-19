@@ -7,7 +7,6 @@ import java.util.HashMap;
  * Auth : Oh Dong-geon
  * Description : 프로그래머스 위장 문제 솔루션입니다.
  */
-
 class Camouflage {
 
     public static void main(String[] args) {

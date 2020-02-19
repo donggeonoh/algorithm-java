@@ -1,14 +1,13 @@
 package solutions.hash;
 
+import java.util.HashMap;
+
 /*
  * Date : 2019-12-23
  * Auth : Oh Dong-geon
  * Description : 프로그래머스 완주하지 못한 선수 문제 솔루션입니다.
  *
  */
-
-import java.util.HashMap;
-
 class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

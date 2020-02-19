@@ -1,5 +1,12 @@
 package solutions;
 
+/**
+ *  Problem : https://www.acmicpc.net/problem/1152
+ *  Date    : 2020-02-16
+ *  Dankook UNIV.
+ *  Computer Science
+ *  Oh Donggeon
+ */
 class Problem17136 {
 
     int answer = Integer.MAX_VALUE;

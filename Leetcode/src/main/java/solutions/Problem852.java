@@ -1,15 +1,15 @@
+
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/peak-index-in-a-mountain-array/
  *  Date    : 2019-03-21
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem852 {
 
 	public static void main(String[] args) {

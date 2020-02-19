@@ -1,15 +1,14 @@
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/merge-two-binary-trees/
  *  Date    : 2019-03-11
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem617 {
 
 	public static void main(String[] args) {

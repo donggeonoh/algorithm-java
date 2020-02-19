@@ -1,15 +1,14 @@
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/jewels-and-stones/
  *  Date    : 2019-03-03
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem771 {
 
 	public static void main(String[] args) {

@@ -3,6 +3,13 @@ package solutions;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ *  Problem : https://www.acmicpc.net/problem/1152
+ *  Date    : 2020-02-17
+ *  Dankook UNIV.
+ *  Computer Science
+ *  Oh Donggeon
+ */
 public class Problem2667 {
 
     private ArrayList<Integer> complex = new ArrayList<>();

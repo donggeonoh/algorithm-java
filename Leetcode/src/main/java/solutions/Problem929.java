@@ -1,17 +1,16 @@
+package solutions;
+
+import java.util.ArrayList;
+
 /*
  *  Problem : https://leetcode.com/problems/unique-email-addresses/
  *  Date    : 2019-03-22
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
-import java.util.ArrayList;
-
 public class Problem929 {
 
 	public static void main(String[] args) {

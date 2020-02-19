@@ -1,18 +1,17 @@
+package solutions;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  *  Problem : https://leetcode.com/problems/self-dividing-numbers/
  *  Date    : 2019-03-21
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Problem728 {
 
 	public static void main(String[] args) {

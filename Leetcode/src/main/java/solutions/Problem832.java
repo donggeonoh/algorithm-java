@@ -1,15 +1,14 @@
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/flipping-an-image/
  *  Date    : 2019-03-18
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem832 {
 
 	public static void main(String[] args) {

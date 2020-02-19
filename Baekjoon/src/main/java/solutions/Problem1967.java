@@ -3,6 +3,13 @@ package solutions;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ *  Problem : https://www.acmicpc.net/problem/1152
+ *  Date    : 2020-02-18
+ *  Dankook UNIV.
+ *  Computer Science
+ *  Oh Donggeon
+ */
 public class Problem1967 {
 
     private List<List<MyNode>> nodes;

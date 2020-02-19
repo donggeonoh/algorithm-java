@@ -8,7 +8,6 @@ package solutions.level1;
  *               S, D, T�� ��� S = ����^1, D = ����^2, T = ����^3
  *
  */
-
 class Dart {
     public int solution(String dartResult) {
         int num[] = new int[3];

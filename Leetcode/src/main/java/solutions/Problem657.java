@@ -1,15 +1,14 @@
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/robot-return-to-origin/
  *  Date    : 2019-03-11
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem657 {
 
 	public static void main(String[] args) {

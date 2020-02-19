@@ -7,7 +7,6 @@ import java.util.*;
  * Auth : Oh Dong-geon
  * Description : 프로그래머스 베스트 앨범 문제 솔루션입니다.
  */
-
 public class BestAlbum {
     public static void main(String[] args) {
         String[] input1 = {

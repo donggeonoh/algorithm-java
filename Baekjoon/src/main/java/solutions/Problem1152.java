@@ -1,3 +1,7 @@
+package solutions;
+
+import java.util.Scanner;
+
 /*
  *  Problem : https://www.acmicpc.net/problem/1152
  *  Date    : 2019-03-13
@@ -7,11 +11,6 @@
  *
  *  SOLVED!!!
  */
-
-package solutions;
-
-import java.util.Scanner;
-
 public class Problem1152 {
 
     public static void main(String[] args) {

@@ -1,15 +1,15 @@
+
+package solutions;
+
 /*
  *  Problem : https://leetcode.com/problems/di-string-match/
  *  Date    : 2019-03-18
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  
+ *
  *  SOLVED!!!
  */
-
-package solutions;
-
 public class Problem942 {
 
 	public static void main(String[] args) {
