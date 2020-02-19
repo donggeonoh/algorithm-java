@@ -1,7 +1,7 @@
 package solutions;
 
 /**
- *  Problem : https://www.acmicpc.net/problem/1152
+ *  Problem : https://www.acmicpc.net/problem/17136
  *  Date    : 2020-02-16
  *  Dankook UNIV.
  *  Computer Science

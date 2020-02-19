@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- *  Problem : https://www.acmicpc.net/problem/1152
+ *  Problem : https://www.acmicpc.net/problem/2667
  *  Date    : 2020-02-17
  *  Dankook UNIV.
  *  Computer Science

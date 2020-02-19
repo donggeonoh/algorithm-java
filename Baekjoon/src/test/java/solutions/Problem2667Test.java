@@ -6,14 +6,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import static org.junit.Assert.*;
-
 public class Problem2667Test {
 
     @Test
     public void solution() throws FileNotFoundException {
         Problem2667 problem2667 = new Problem2667();
-        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/main/java/testcases/Probleam2667Input.txt"));
+        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Probleam2667Input.txt"));
 
         int size = scanner.nextInt();
         int[][] testcase = new int[size][size];

@@ -16,7 +16,7 @@ public class Problem17136Test {
         Scanner scanner = null;
 
         try {
-            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/main/java/testcases/Problem17136Input.txt"));
+            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Problem17136Input.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
