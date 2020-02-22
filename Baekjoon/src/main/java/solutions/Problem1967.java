@@ -9,53 +9,61 @@ import java.util.List;
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
- *  desc : 정점과 정점 사이의 거리가 가장 먼 거리를 구하여라.
+ *  desc : 정점과 정점 사이 가장 먼 거리를 출력 하여라.
  */
 public class Problem1967 {
 
-    private List<List<MyNode>> nodes;
-    private boolean[] visited;
-    private int nodesSize = 0;
-    private int length = 0;
+    private final List<List<MyNode>> nodes;
+    private final int nodesSize;
 
+    private int farthestNode = 0;
     private int answer = 0;
+
+    private boolean[] visited;
+    private int length;
+
 
     public Problem1967(int size, int[][] input) {
 
         this.nodes = new LinkedList<>();
-        this.visited = new boolean[size];
         this.nodesSize = size;
 
+        init();
         init(input);
     }
 
     public void printSolution() {
 
-        getFarthestNode(0);
+        getFarthestNode(2);
+        init();
+        getFarthestNode(farthestNode);
         System.out.println(answer);
     }
 
     private void getFarthestNode(int outerIndex) {
 
         if(visited[outerIndex]) {
-            System.out.println(outerIndex + " is visited");
             return;
         }
-
         visited[outerIndex] = true;
+
         for(int innerIndex = 0; innerIndex < nodes.get(outerIndex).size(); innerIndex++) {
 
             MyNode node = nodes.get(outerIndex).get(innerIndex);
             length += node.getEdge();
-
-            System.out.println("node " + outerIndex + " to " + node.getVertex() + " length : " + length);
             getFarthestNode(node.getVertex());
             length -= node.getEdge();
 
             if(answer < length) {
+                farthestNode = outerIndex;
                 answer = length;
             }
         }
+    }
+
+    private void init() {
+        visited = new boolean[nodesSize];
+        length = 0;
     }
 
     private void init(int[][] input) {
@@ -72,13 +80,6 @@ public class Problem1967 {
                 nodes.add(new LinkedList<>());
             }
             nodes.get(node[1] - 1).add(new MyNode(node[0] - 1, node[2]));
-        }
-
-        for(int i = 0; i < nodes.size(); i++) {
-            System.out.println("node" + i);
-            for(int j = 0; j < nodes.get(i).size(); j++) {
-                System.out.println("vertex : " + nodes.get(i).get(j).getVertex() + " edge : " + nodes.get(i).get(j).getEdge());
-            }
         }
     }
 }
