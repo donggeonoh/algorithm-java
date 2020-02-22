@@ -9,6 +9,7 @@ import java.util.List;
  *  Dankook UNIV.
  *  Computer Science
  *  Oh Donggeon
+ *  desc : 정점과 정점 사이의 거리가 가장 먼 거리를 구하여라.
  */
 public class Problem1967 {
 
@@ -16,6 +17,7 @@ public class Problem1967 {
     private boolean[] visited;
     private int nodesSize = 0;
     private int length = 0;
+
     private int answer = 0;
 
     public Problem1967(int size, int[][] input) {
@@ -30,31 +32,30 @@ public class Problem1967 {
     public void printSolution() {
 
         getFarthestNode(0);
+        System.out.println(answer);
     }
 
-    private void getFarthestNode(int nodeIndex) {
+    private void getFarthestNode(int outerIndex) {
 
-        if(visited[nodeIndex]) {
+        if(visited[outerIndex]) {
+            System.out.println(outerIndex + " is visited");
             return;
         }
 
-        int linkedNodeIndex = 0;
-        MyNode node = nodes.get(nodeIndex).get(linkedNodeIndex);
-        visited[nodeIndex] = !visited[nodeIndex];
-        length += node.getEdge();
+        visited[outerIndex] = true;
+        for(int innerIndex = 0; innerIndex < nodes.get(outerIndex).size(); innerIndex++) {
 
-        System.out.println("node : " + nodeIndex + " nextNode : " + node.getVertex() + " length : " + length);
-        if(answer < length) {
-            answer = length;
+            MyNode node = nodes.get(outerIndex).get(innerIndex);
+            length += node.getEdge();
+
+            System.out.println("node " + outerIndex + " to " + node.getVertex() + " length : " + length);
+            getFarthestNode(node.getVertex());
+            length -= node.getEdge();
+
+            if(answer < length) {
+                answer = length;
+            }
         }
-        getFarthestNode(node.getVertex());
-        length -= node.getEdge();
-        linkedNodeIndex++;
-        if(linkedNodeIndex == nodes.get(nodeIndex).size()) {
-            return;
-        }
-        node = nodes.get(nodeIndex).get(linkedNodeIndex);
-        getFarthestNode(node.getVertex());
     }
 
     private void init(int[][] input) {
