@@ -83,22 +83,3 @@ public class Solution1967 {
         }
     }
 }
-
-class MyNode {
-
-    private int vertex;
-    private int edge;
-
-    public MyNode(int vertex, int edge) {
-        this.vertex = vertex;
-        this.edge = edge;
-    }
-
-    public int getVertex() {
-        return vertex;
-    }
-
-    public int getEdge() {
-        return edge;
-    }
-}

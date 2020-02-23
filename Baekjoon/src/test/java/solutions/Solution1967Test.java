@@ -8,10 +8,6 @@ import java.util.Scanner;
 
 public class Solution1967Test {
 
-    public static void main(String[] args) {
-
-    }
-
     @Test
     public void test() throws FileNotFoundException {
 
