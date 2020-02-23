@@ -7,7 +7,7 @@ package solutions;
  *  Computer Science
  *  Oh Donggeon
  */
-class Problem17136 {
+class Solution17136 {
 
     int answer = Integer.MAX_VALUE;
     int result = 0;

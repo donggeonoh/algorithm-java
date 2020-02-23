@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Problem1967Test {
+public class Solution1967Test {
 
     public static void main(String[] args) {
 
@@ -15,7 +15,7 @@ public class Problem1967Test {
     @Test
     public void test() throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Problem1967Input.txt"));
+        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input1967.txt"));
 
         int num = scanner.nextInt();
         int[][] input = new int[num - 1][3];
@@ -26,8 +26,8 @@ public class Problem1967Test {
             }
         }
 
-        Problem1967 problem1967 = new Problem1967(num, input);
-        problem1967.printSolution();
+        Solution1967 solution1967 = new Solution1967(num, input);
+        solution1967.printSolution();
     }
 
 }

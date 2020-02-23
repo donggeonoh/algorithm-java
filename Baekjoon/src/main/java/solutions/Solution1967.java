@@ -11,7 +11,7 @@ import java.util.List;
  *  Oh Donggeon
  *  desc : 정점과 정점 사이 가장 먼 거리를 출력 하여라.
  */
-public class Problem1967 {
+public class Solution1967 {
 
     private final List<List<MyNode>> nodes;
     private final int nodesSize;
@@ -23,7 +23,7 @@ public class Problem1967 {
     private int length;
 
 
-    public Problem1967(int size, int[][] input) {
+    public Solution1967(int size, int[][] input) {
 
         this.nodes = new LinkedList<>();
         this.nodesSize = size;

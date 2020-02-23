@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  *  SOLVED!!!
  */
-public class Problem1152 {
+public class Solution1152 {
 
     public static void main(String[] args) {
 

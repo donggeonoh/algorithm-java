@@ -10,7 +10,7 @@ import java.util.Collections;
  *  Computer Science
  *  Oh Donggeon
  */
-public class Problem2667 {
+public class Solution2667 {
 
     private ArrayList<Integer> complex = new ArrayList<>();
     private int[][] testcase;

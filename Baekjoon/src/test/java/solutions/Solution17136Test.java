@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
 
-public class Problem17136Test {
+public class Solution17136Test {
 
     @Test
     public void solution() {
@@ -16,7 +16,7 @@ public class Problem17136Test {
         Scanner scanner = null;
 
         try {
-            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Problem17136Input.txt"));
+            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input17136.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -31,7 +31,7 @@ public class Problem17136Test {
                 }
                 System.out.println();
             }
-            Problem17136 problem = new Problem17136();
+            Solution17136 problem = new Solution17136();
             int result = problem.solution(testcase);
             int answer = scanner.nextInt();
             System.out.println("result : " + result + " answer : " + answer);
