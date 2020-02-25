@@ -1,9 +1,6 @@
 package solutions;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by donggeon on 2020/02/23
@@ -33,16 +30,18 @@ public class Solution1260 {
     }
 
     public void solution() {
+        ArrayList<Integer>[] list = new ArrayList[10];
+
+        for(int i = 0; i < 10; i++) {
+            list[i] = new ArrayList<>();
+        }
         init();
         depthFirstSearch(startVertex);
         init();
-        breadthFirstSearch(startVertex);
-
-        //printSolution();
+        breadthFirstSearch();
     }
 
     public void depthFirstSearch(int vertex) {
-
         visited[vertex] = true;
 
         for (int index = 0; index < graph.get(vertex).size(); index++) {
@@ -55,37 +54,23 @@ public class Solution1260 {
         DFS.push(vertex);
     }
 
-    public void breadthFirstSearch(int vertex) {
+    public void breadthFirstSearch() {
+        BFS.offer(startVertex);
+        visited[startVertex] = true;
 
-        BFS.offer(vertex);
-        visited[vertex] = true;
+        while (!BFS.isEmpty()) {
+            int vertex = BFS.poll();
+            System.out.print(vertex + " ");
 
-        breadthSearchWithOfferQueue(vertex);
+            for (int index = 0; index < graph.get(vertex).size(); index++) {
+                int linkedNode = graph.get(vertex).get(index);
 
-        for(int queueIndex = 0; queueIndex < BFS.size(); queueIndex++) {
-            int queueVertex = BFS.poll();
-            breadthSearchWithOfferQueue(queueVertex);
-        }
-    }
-
-    public void breadthSearchWithOfferQueue(int vertex) {
-        for(int index = 0; index < graph.get(vertex).size(); index++) {
-            int linkedNode = graph.get(vertex).get(index);
-            if(!visited[linkedNode]) {
-                BFS.offer(linkedNode);
-                visited[linkedNode] = true;
+                if (!visited[linkedNode]) {
+                    visited[linkedNode] = true;
+                    BFS.offer(linkedNode);
+                }
             }
         }
-    }
-
-    public void printSolution() {
-        while (!DFS.isEmpty()) {
-            System.out.print(DFS.pop()+ " ");
-        }
-        System.out.println();
-        /*while (!BFS.isEmpty()) {
-            System.out.print(BFS.poll() + " ");
-        }*/
     }
 
     public void init() {
