@@ -48,15 +48,11 @@ public class Solution1260Test {
             }
 
             System.out.println("===RESULT===");
-
+            sc.nextLine();
             for (int i = 0; i < 2; i++) {
-                for (int j = 0; j < vertex; j++) {
-                    System.out.print(sc.nextInt() + " ");
-                }
-                System.out.println();
+                System.out.println(sc.nextLine());
             }
             System.out.println("============");
-
 
             Solution1260 solution = new Solution1260(input, vertex, edge, startVertex);
             solution.solution();

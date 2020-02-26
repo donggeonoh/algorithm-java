@@ -1,6 +1,9 @@
 package solutions;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
 
 /**
  * Created by donggeon on 2020/02/23
@@ -30,31 +33,38 @@ public class Solution1260 {
     }
 
     public void solution() {
-        ArrayList<Integer>[] list = new ArrayList[10];
-
-        for(int i = 0; i < 10; i++) {
-            list[i] = new ArrayList<>();
-        }
         init();
-        depthFirstSearch(startVertex);
+        depthFirstSearch();
         init();
         breadthFirstSearch();
     }
 
-    public void depthFirstSearch(int vertex) {
-        visited[vertex] = true;
+    public void depthFirstSearch() {
 
-        for (int index = 0; index < graph.get(vertex).size(); index++) {
-            int linkedNode = graph.get(vertex).get(index);
-            if (!visited[linkedNode]) {
-                depthFirstSearch(linkedNode);
+        DFS.push(startVertex);
+        visited[startVertex] = true;
+        System.out.print(startVertex + " ");
+
+        while (!DFS.isEmpty()) {
+            boolean nonePushNodeFlag = true;
+            for (int index = 0; index < graph.get(DFS.peek()).size(); index++) {
+                int linkedNode = graph.get(DFS.peek()).get(index);
+                if (!visited[linkedNode]) {
+                    visited[linkedNode] = true;
+                    nonePushNodeFlag = false;
+                    DFS.push(linkedNode);
+                    System.out.print(linkedNode + " ");
+                }
+            }
+            if(nonePushNodeFlag) {
+                DFS.pop();
             }
         }
-
-        DFS.push(vertex);
+        System.out.println();
     }
 
     public void breadthFirstSearch() {
+
         BFS.offer(startVertex);
         visited[startVertex] = true;
 
