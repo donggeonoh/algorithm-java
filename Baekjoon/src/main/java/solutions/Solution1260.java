@@ -20,8 +20,8 @@ public class Solution1260 {
     private final int edgeNum;
     private final int startVertex;
 
-    private final Stack<Integer> DFS = new Stack<>();
-    private final Queue<Integer> BFS = new LinkedList<>();
+    private final Stack<Integer> stack = new Stack<>();
+    private final Queue<Integer> queue = new LinkedList<>();
 
     private boolean[] visited;
 
@@ -33,54 +33,80 @@ public class Solution1260 {
     }
 
     public void solution() {
-        init();
         depthFirstSearch();
-        init();
+        System.out.println();
         breadthFirstSearch();
     }
 
     public void depthFirstSearch() {
 
-        DFS.push(startVertex);
-        visited[startVertex] = true;
-        System.out.print(startVertex + " ");
+        init();
 
-        while (!DFS.isEmpty()) {
+        stack.push(startVertex);
+        visited[startVertex] = true;
+
+        printVertex(startVertex);
+
+        /*while (!stack.isEmpty()) {
             boolean nonePushNodeFlag = true;
-            for (int index = 0; index < graph.get(DFS.peek()).size(); index++) {
-                int linkedNode = graph.get(DFS.peek()).get(index);
+
+            for (int index = 0; index < graph.get(stack.peek()).size(); index++) {
+                int linkedNode = graph.get(stack.peek()).get(index);
+
                 if (!visited[linkedNode]) {
                     visited[linkedNode] = true;
                     nonePushNodeFlag = false;
-                    DFS.push(linkedNode);
-                    System.out.print(linkedNode + " ");
+                    stack.push(linkedNode);
+                    printVertex(linkedNode);
                 }
             }
             if(nonePushNodeFlag) {
-                DFS.pop();
+                stack.pop();
+            }
+        }*/
+
+        while (!stack.isEmpty()) {
+            boolean nonePushNodeFlag = true;
+            List<Integer> linkedNodeList = graph.get(stack.peek());
+
+            for(Integer linkedNode : linkedNodeList) {
+                if (!visited[linkedNode]) {
+                    visited[linkedNode] = true;
+                    nonePushNodeFlag = false;
+
+                    stack.push(linkedNode);
+                    printVertex(linkedNode);
+                }
+            }
+            if(nonePushNodeFlag) {
+                stack.pop();
             }
         }
-        System.out.println();
     }
 
     public void breadthFirstSearch() {
 
-        BFS.offer(startVertex);
+        init();
+
+        queue.offer(startVertex);
         visited[startVertex] = true;
 
-        while (!BFS.isEmpty()) {
-            int vertex = BFS.poll();
-            System.out.print(vertex + " ");
+        while (!queue.isEmpty()) {
+            int vertex = queue.poll();
+            printVertex(vertex);
 
-            for (int index = 0; index < graph.get(vertex).size(); index++) {
-                int linkedNode = graph.get(vertex).get(index);
-
+            List<Integer> linkedNodeList = graph.get(vertex);
+            for(Integer linkedNode : linkedNodeList) {
                 if (!visited[linkedNode]) {
                     visited[linkedNode] = true;
-                    BFS.offer(linkedNode);
+                    queue.offer(linkedNode);
                 }
             }
         }
+    }
+
+    private void printVertex(int vertex) {
+        System.out.print(vertex + " ");
     }
 
     public void init() {
