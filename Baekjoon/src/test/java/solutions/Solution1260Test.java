@@ -19,8 +19,10 @@ public class Solution1260Test {
             int edge = sc.nextInt();
             int startVertex = sc.nextInt();
 
+/*
             System.out.println();
             System.out.println("vertex : " + vertex + " edge : " + edge + " startVertex : " + startVertex);
+*/
 
             List<List<Integer>> input = new LinkedList<>();
 
@@ -39,20 +41,20 @@ public class Solution1260Test {
                 Collections.sort(input.get(i));
             }
 
-            for (int i = 0; i < input.size(); i++) {
+/*            for (int i = 0; i < input.size(); i++) {
                 System.out.println("node : " + i);
                 for (int j = 0; j < input.get(i).size(); j++) {
                     System.out.print(input.get(i).get(j) + " ");
                 }
                 System.out.println();
-            }
+            }*/
 
-            System.out.println("===RESULT===");
+/*            System.out.println("===RESULT===");
             sc.nextLine();
             for (int i = 0; i < 2; i++) {
                 System.out.println(sc.nextLine());
             }
-            System.out.println("============");
+            System.out.println("============");*/
 
             Solution1260 solution = new Solution1260(input, vertex, edge, startVertex);
             solution.solution();
