@@ -43,43 +43,20 @@ public class Solution1260 {
         init();
 
         stack.push(startVertex);
-        visited[startVertex] = true;
 
-        printVertex(startVertex);
+        while(!stack.isEmpty()) {
+            int currentVertex = stack.pop();
 
-        /*while (!stack.isEmpty()) {
-            boolean nonePushNodeFlag = true;
+            if(!visited[currentVertex]) {
+                System.out.print(currentVertex + " ");
+                visited[currentVertex] = true;
 
-            for (int index = 0; index < graph.get(stack.peek()).size(); index++) {
-                int linkedNode = graph.get(stack.peek()).get(index);
-
-                if (!visited[linkedNode]) {
-                    visited[linkedNode] = true;
-                    nonePushNodeFlag = false;
-                    stack.push(linkedNode);
-                    printVertex(linkedNode);
+                for(int index = graph.get(currentVertex).size() - 1; index >= 0; index--) {
+                    int node = graph.get(currentVertex).get(index);
+                    if(!visited[node]) {
+                        stack.push(node);
+                    }
                 }
-            }
-            if(nonePushNodeFlag) {
-                stack.pop();
-            }
-        }*/
-
-        while (!stack.isEmpty()) {
-            boolean nonePushNodeFlag = true;
-            List<Integer> linkedNodeList = graph.get(stack.peek());
-
-            for(Integer linkedNode : linkedNodeList) {
-                if (!visited[linkedNode]) {
-                    visited[linkedNode] = true;
-                    nonePushNodeFlag = false;
-
-                    stack.push(linkedNode);
-                    printVertex(linkedNode);
-                }
-            }
-            if(nonePushNodeFlag) {
-                stack.pop();
             }
         }
     }

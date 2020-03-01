@@ -13,6 +13,7 @@
         <module>Baekjoon</module>
         <module>Programmers</module>
         <module>SWExpertAcademy</module>
+        <module>Jungol</module>
     </modules>
 
     <dependencies>
