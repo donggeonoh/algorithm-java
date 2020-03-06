@@ -12,7 +12,14 @@ import java.util.Scanner;
  */
 public class Solution11729 {
 
-    int num;
+    private static final int NUM_POLE = 3;
+
+    private int num;
+    private int[][] poles;
+
+    public static void main(String[] args) {
+        Solution11729 solution = new Solution11729();
+    }
 
     public Solution11729() {
         init();
@@ -22,6 +29,13 @@ public class Solution11729 {
         try {
             Scanner sc = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input11729.txt"));
             num = sc.nextInt();
+            poles = new int[NUM_POLE][num];
+
+            for(int row = 0; row < num; row++) {
+                poles[0][row] = row + 1;
+                System.out.println(poles[0][row]);
+            }
+
             sc.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
