@@ -80,6 +80,7 @@ public class Solution11729 {
 
     private int putPlate(int plate) {
 
+        return 0;
     }
 
     private boolean isEnded() {
