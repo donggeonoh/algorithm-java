@@ -12,7 +12,7 @@ import java.util.Stack;
  * Desc : 입력된 정점과 간선에서 시작 정점에서의 DFS, BFS를 차례대로 출력하여라.
  * DFS는 Stack, BFS는 Queue를 사용.
  */
-public class Solution1260 {
+public class DFSAndBFS {
 
     private final List<List<Integer>> graph;
 
@@ -25,7 +25,7 @@ public class Solution1260 {
 
     private boolean[] visited;
 
-    public Solution1260(List<List<Integer>> graph, int vertexNum, int edgeNum, int startVertex) {
+    public DFSAndBFS(List<List<Integer>> graph, int vertexNum, int edgeNum, int startVertex) {
         this.graph = graph;
         this.vertexNum = vertexNum;
         this.edgeNum = edgeNum;

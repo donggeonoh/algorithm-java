@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Solution10974Test {
+public class PermutationTest {
 
     @Test
     public void solution() throws FileNotFoundException {
@@ -17,8 +17,8 @@ public class Solution10974Test {
             int num = sc.nextInt();
             System.out.println(num);
 
-            Solution10974 solution10974 = new Solution10974(num);
-            solution10974.solution(0);
+            Permutation permutation = new Permutation(num);
+            permutation.solution(0);
         }
     }
 }

@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Source : https://www.acmicpc.net/problem/2407
  * Desc : nCm을 출력한다.
  */
-public class Solution2407 {
+public class Combination {
 
     private static int n = 0;
     private static int m = 0;

@@ -6,11 +6,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Solution2667Test {
+public class NumberingApartmentComplexTest {
 
     @Test
     public void solution() throws FileNotFoundException {
-        Solution2667 solution2667 = new Solution2667();
+        NumberingApartmentComplex numberingApartmentComplex = new NumberingApartmentComplex();
         Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input2667.txt"));
 
         int size = scanner.nextInt();
@@ -23,6 +23,6 @@ public class Solution2667Test {
             }
         }
 
-        solution2667.solution(testcase);
+        numberingApartmentComplex.solution(testcase);
     }
 }

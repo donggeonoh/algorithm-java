@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution1167Test {
+public class DiameterOfTheTree1Test {
 
     @Test
     public void solution() throws FileNotFoundException {
-        new Solution1167(getInput()).solution();
+        new DiameterOfTheTree1(getInput()).solution();
     }
 
     public List<List<MyNode>> getInput() throws FileNotFoundException {

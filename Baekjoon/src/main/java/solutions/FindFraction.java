@@ -9,9 +9,9 @@ package solutions;
  *
  *  SOLVED!!!
  */
-class Solution1193 {
+class FindFraction {
 
-	public Solution1193(int input) {
+	public FindFraction(int input) {
 		findFountain(input);
 	}
 

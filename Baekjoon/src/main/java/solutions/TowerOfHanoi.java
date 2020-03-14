@@ -11,7 +11,7 @@ import java.util.Stack;
  * Desc : 하노이의 탑 최소 옮긴 횟수와 이동 경로를 출력하여라
  * Input : 원판의 갯수
  */
-public class Solution11729 {
+public class TowerOfHanoi {
 
 	private static final int NUM_POLE = 3;
 
@@ -21,7 +21,7 @@ public class Solution11729 {
 	private static StringBuilder sb = new StringBuilder();
 	private static int answer = 0;
 
-	public Solution11729(int input) {
+	public TowerOfHanoi(int input) {
 		plate = input;
 		poles = new int[NUM_POLE][input];
 		answer = 0;

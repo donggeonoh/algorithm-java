@@ -6,13 +6,13 @@ package solutions;
  * Source : https://www.acmicpc.net/problem/10974
  * Desc : 숫자가 입력되면 그 수의 순열을 모두 출력하시오.
  */
-public class Solution10974 {
+public class Permutation {
 
     int input;
     int[] numCase;
     boolean[] visited;
 
-    public Solution10974(int input) {
+    public Permutation(int input) {
         this.input = input;
         numCase = new int[input];
         visited = new boolean[input];

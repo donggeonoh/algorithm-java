@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Solution1967Test {
+public class DiameterOfTheTree2Test {
 
     @Test
     public void test() throws FileNotFoundException {
@@ -22,8 +22,8 @@ public class Solution1967Test {
             }
         }
 
-        Solution1967 solution1967 = new Solution1967(num, input);
-        solution1967.printSolution();
+        DiameterOfTheTree2 diameterOfTheTree2 = new DiameterOfTheTree2(num, input);
+        diameterOfTheTree2.printSolution();
     }
 
 }

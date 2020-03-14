@@ -1,15 +1,17 @@
 package solutions;
 
+import java.util.LinkedList;
 import java.util.List;
 
-/*
- *  Problem : https://www.acmicpc.net/problem/1167
- *  Date    : 2020-02-23
- *  Dankook UNIV. Computer Science
+/**
+ *  Problem : https://www.acmicpc.net/problem/1967
+ *  Date    : 2020-02-18
+ *  Dankook UNIV.
+ *  Computer Science
  *  Oh Donggeon
- *  Desc : 1967번과 똑같은 문제. 정점과 정점 사이 제일 먼 거리를 구하여라.
+ *  desc : 정점과 정점 사이 가장 먼 거리를 출력 하여라.
  */
-public class Solution1167 {
+public class DiameterOfTheTree2 {
 
     private final List<List<MyNode>> nodes;
     private final int nodesSize;
@@ -20,14 +22,19 @@ public class Solution1167 {
     private boolean[] visited;
     private int length;
 
-    public Solution1167(List<List<MyNode>> nodes) {
-        this.nodes = nodes;
-        this.nodesSize = nodes.size();
+
+    public DiameterOfTheTree2(int size, int[][] input) {
+
+        this.nodes = new LinkedList<>();
+        this.nodesSize = size;
+
         init();
+        init(input);
     }
 
-    public void solution() {
-        getFarthestNode(0);
+    public void printSolution() {
+
+        getFarthestNode(2);
         init();
         getFarthestNode(farthestNode);
         System.out.println(answer);
@@ -57,5 +64,22 @@ public class Solution1167 {
     private void init() {
         visited = new boolean[nodesSize];
         length = 0;
+    }
+
+    private void init(int[][] input) {
+
+        for(int[] node : input) {
+            if(node[0] > nodes.size()) {
+                nodes.add(new LinkedList<>());
+            }
+            nodes.get(node[0] - 1).add(new MyNode(node[1] - 1, node[2]));
+        }
+
+        for(int[] node : input) {
+            if(node[1] > nodes.size()) {
+                nodes.add(new LinkedList<>());
+            }
+            nodes.get(node[1] - 1).add(new MyNode(node[0] - 1, node[2]));
+        }
     }
 }

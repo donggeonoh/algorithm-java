@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution1260Test {
+public class DFSAndBFSTest {
 
     @Test
     public void solution() throws FileNotFoundException {
@@ -54,7 +54,7 @@ public class Solution1260Test {
             }
             System.out.println("============");
 
-            Solution1260 solution = new Solution1260(input, vertex, edge, startVertex);
+            DFSAndBFS solution = new DFSAndBFS(input, vertex, edge, startVertex);
             solution.solution();
         }
     }

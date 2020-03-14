@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
 
-public class Solution17136Test {
+public class ConfettiTest {
 
     @Test
     public void solution() {
@@ -31,7 +31,7 @@ public class Solution17136Test {
                 }
                 System.out.println();
             }
-            Solution17136 problem = new Solution17136();
+            Confetti problem = new Confetti();
             int result = problem.solution(testcase);
             int answer = scanner.nextInt();
             System.out.println("result : " + result + " answer : " + answer);

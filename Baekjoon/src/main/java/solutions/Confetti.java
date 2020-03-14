@@ -7,7 +7,7 @@ package solutions;
  *  Computer Science
  *  Oh Donggeon
  */
-class Solution17136 {
+class Confetti {
 
     int answer = Integer.MAX_VALUE;
     int result = 0;

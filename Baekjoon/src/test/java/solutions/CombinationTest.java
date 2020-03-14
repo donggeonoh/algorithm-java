@@ -4,11 +4,11 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class Solution2407Test {
+public class CombinationTest {
 
     @Test
     public void solution() {
-        Solution2407 test = new Solution2407();
+        Combination test = new Combination();
         test.input();
         test.solution(0, 0);
 

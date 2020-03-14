@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  *  SOLVED!!!
  */
-public class Solution1152 {
+public class NumberOfWord {
 
     public static void main(String[] args) {
 
