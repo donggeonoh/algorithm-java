@@ -15,11 +15,11 @@ public class Solution11729 {
 
 	private static final int NUM_POLE = 3;
 
-	private int[][] poles;
-	private int plate = 0;
+	private static int[][] poles;
+	private static int plate = 0;
 
-	private int answer = 0;
-	private List<String> routes = new ArrayList<>();
+	private static StringBuilder sb = new StringBuilder();
+	private static int answer = 0;
 
 	public Solution11729(int input) {
 		plate = input;
@@ -31,23 +31,20 @@ public class Solution11729 {
 		}
 	}
 
-	public void printAnswerByStack() {
-		getAnswerByStack(0, 1, 2, plate);
-		System.out.println(answer);
-		for (String route : routes) {
-			System.out.println(route);
+	private static void getAnswerByRF(int from, int by, int to, int n) {
+		if (n == 1) {
+			answer++;
+			storeRoute(from, to);
+			return;
 		}
+
+		getAnswerByRF(from, to, by, n - 1);
+		answer++;
+		storeRoute(from, to);
+		getAnswerByRF(by, from, to, n - 1);
 	}
 
-	public void printAnswerByRF() {
-		getAnswerByRF(0, 1, 2, plate);
-		System.out.println(answer);
-		for (String route : routes) {
-			System.out.println(route);
-		}
-	}
-
-	private void getAnswerByStack(int from, int by, int to, int n) {
+	private static void getAnswerByStack(int from, int by, int to, int n) {
 
 		Stack<Integer> stack = new Stack<>();
 
@@ -85,21 +82,22 @@ public class Solution11729 {
 		}
 	}
 
-	private void getAnswerByRF(int from, int by, int to, int n) {
-		if (n == 1) {
-			answer++;
-			storeRoute(from, to);
-			return;
-		}
-
-		getAnswerByRF(from, to, by, n - 1);
-		answer++;
-		storeRoute(from, to);
-		getAnswerByRF(by, from, to, n - 1);
+	private static void storeRoute(int from, int to) {
+		sb.append(from + 1).append(" ").append(to + 1).append("\n");
 	}
 
-	private void storeRoute(int from, int to) {
-		String route = (from + 1) + " " + (to + 1);
-		routes.add(route);
+	public static void printAnswerByRF() {
+		getAnswerByRF(0, 1, 2, plate);
+		printAnswer();
+	}
+
+	public static void printAnswerByStack() {
+		getAnswerByStack(0, 1, 2, plate);
+		printAnswer();
+	}
+
+	private static void printAnswer() {
+		System.out.println(answer);
+		System.out.println(sb);
 	}
 }
