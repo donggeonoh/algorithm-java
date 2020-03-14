@@ -1,95 +1,105 @@
 package solutions;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * Created by donggeon on 2020/03/06
  * Dankook UNIV. Computer Science
  * Source : https://www.acmicpc.net/problem/11729
- * Desc : 하노이의 탑 최소 옮긴 횟수와 이동 경로를 출력하여
+ * Desc : 하노이의 탑 최소 옮긴 횟수와 이동 경로를 출력하여라
+ * Input : 원판의 갯수
  */
 public class Solution11729 {
 
-    private static final int NUM_POLE = 3;
+	private static final int NUM_POLE = 3;
 
-    private int plate = 0;
-    private int[][] poles;
+	private int[][] poles;
+	private int plate = 0;
 
-    private int answer = 0;
+	private int answer = 0;
+	private List<String> routes = new ArrayList<>();
 
-    public static void main(String[] args) {
-        Solution11729 solution = new Solution11729();
-    }
+	public Solution11729(int input) {
+		plate = input;
+		poles = new int[NUM_POLE][input];
+		answer = 0;
 
-    public Solution11729() {
-        init();
-    }
+		for (int row = 0; row < plate; row++) {
+			poles[0][row] = row + 1;
+		}
+	}
 
-    public void init() {
+	public void printAnswerByStack() {
+		getAnswerByStack(0, 1, 2, plate);
+		System.out.println(answer);
+		for (String route : routes) {
+			System.out.println(route);
+		}
+	}
 
-        try {
-            Scanner sc = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input11729.txt"));
-            plate = sc.nextInt();
-            poles = new int[NUM_POLE][plate];
-            answer = 0;
+	public void printAnswerByRF() {
+		getAnswerByRF(0, 1, 2, plate);
+		System.out.println(answer);
+		for (String route : routes) {
+			System.out.println(route);
+		}
+	}
 
-            for(int row = 0; row < plate; row++) {
-                poles[0][row] = row + 1;
-                System.out.println(poles[0][row]);
-            }
+	private void getAnswerByStack(int from, int by, int to, int n) {
 
-            sc.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+		Stack<Integer> stack = new Stack<>();
 
-    public void solution(int result, int row) {
+		while (true) {
+			while (n > 1) {
+				stack.push(to);
+				stack.push(by);
+				stack.push(from);
+				stack.push(n);
+				n--;
+				stack.push(to);
+				to = by;
+				by = stack.pop();
+			}
 
-        if(row == NUM_POLE) {
-            return;
-        }
+			answer++;
+			storeRoute(from, to);
 
-        if(isEnded()) {
-            if(answer > result) {
-                answer = result;
-            }
-            return;
-        }
+			if (!stack.isEmpty()) {
+				n = stack.pop();
+				from = stack.pop();
+				by = stack.pop();
+				to = stack.pop();
 
-        for(int index = 0; index < plate; index++) {
-            int plate = getPlate(row);
+				answer++;
+				storeRoute(from, to);
 
-            solution(result + 1, row);
-        }
-    }
+				n--;
+				stack.push(from);
+				from = by;
+				by = stack.pop();
+			} else {
+				break;
+			}
+		}
+	}
 
-    private int getPlate(int position) {
-        int[] pole = poles[position];
-        for(int plate = pole.length - 1; plate >= 0; plate--) {
-            if(pole[plate] != 0) {
-                int temp = pole[plate];
-                pole[plate] = 0;
-                return temp;
-            }
-        }
-        return 0;
-    }
+	private void getAnswerByRF(int from, int by, int to, int n) {
+		if (n == 1) {
+			answer++;
+			storeRoute(from, to);
+			return;
+		}
 
-    private int putPlate(int plate) {
+		getAnswerByRF(from, to, by, n - 1);
+		answer++;
+		storeRoute(from, to);
+		getAnswerByRF(by, from, to, n - 1);
+	}
 
-        return 0;
-    }
-
-    private boolean isEnded() {
-        int[] endPole = poles[NUM_POLE - 1];
-        for (int plate : endPole) {
-            if (plate == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+	private void storeRoute(int from, int to) {
+		String route = (from + 1) + " " + (to + 1);
+		routes.add(route);
+	}
 }
