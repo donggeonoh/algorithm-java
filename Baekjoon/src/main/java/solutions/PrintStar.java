@@ -1,5 +1,6 @@
 package solutions;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 /**
@@ -12,29 +13,53 @@ import java.util.InputMismatchException;
  */
 public class PrintStar {
 
-	public static final int NUMBER_REPEAT = 3;
-
+	private char[][] map;
 	private final int input;
 
 	PrintStar(int input) {
 		if (input % 3 != 0) {
 			throw new InputMismatchException("You must input a power of 3.");
 		}
+
+		this.map = new char[input][input];
 		this.input = input;
+
+		for(char[] mapArrays : map) {
+			Arrays.fill(mapArrays, ' ');
+		}
 	}
 
 	public void printSolution() {
-		printStar(input);
+		setStar(0, 0, input);
+		printStar();
 	}
 
-	private void printStar(int input) {
+	private void setStar(int row, int col, int size) {
 
-		if(input == 0) {
+		if (size == 1) {
+			map[row][col] = '*';
 			return;
 		}
 
-		System.out.print("*");
-		printStar(input - 1);
+		int m = size / 3;
+		int count = 0;
+
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				count++;
+				if (count != 5) {
+					setStar(row + i * m, col + j * m, m);
+				}
+			}
+		}
 	}
 
+	private void printStar() {
+		for (char[] mapArrays : map) {
+			for (char item : mapArrays) {
+				System.out.print(item);
+			}
+			System.out.println();
+		}
+	}
 }
