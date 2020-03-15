@@ -1,6 +1,5 @@
 package solutions;
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 
 /**
@@ -24,13 +23,16 @@ public class PrintStar {
 		this.map = new char[input][input];
 		this.input = input;
 
-		for(char[] mapArrays : map) {
-			Arrays.fill(mapArrays, ' ');
+		for(int row = 0; row < input; row++) {
+			for (int col = 0; col < input; col++) {
+				map[row][col] = ' ';
+			}
 		}
 	}
 
 	public void printSolution() {
 		setStar(0, 0, input);
+
 		printStar();
 	}
 
@@ -55,11 +57,15 @@ public class PrintStar {
 	}
 
 	private void printStar() {
-		for (char[] mapArrays : map) {
-			for (char item : mapArrays) {
-				System.out.print(item);
+		StringBuilder sb = new StringBuilder();
+
+		for(int row = 0; row < input; row++) {
+			for (int col = 0; col < input; col++) {
+				sb.append(map[row][col]);
 			}
-			System.out.println();
+			sb.append("\n");
 		}
+
+		System.out.println(sb);
 	}
 }

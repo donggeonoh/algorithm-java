@@ -1,9 +1,5 @@
 package solutions;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 /**
  * Created by donggeon on 2020/03/04
  * Dankook UNIV. Computer Science
@@ -12,26 +8,25 @@ import java.util.Scanner;
  */
 public class Combination {
 
-    private static int n = 0;
-    private static int m = 0;
+    private final int n;
+    private final int m;
 
-    private static int result = 0;
+    private int answer = 0;
 
-    public static void input() {
-        try {
-            Scanner sc = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input2407.txt"));
-            n = sc.nextInt();
-            m = sc.nextInt();
-            sc.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    Combination(int n, int m) {
+        this.n = n;
+        this.m = m;
     }
 
-    public static void solution(int index, int select) {
+    public void printSolution() {
+        getAnswer(0, 0);
+        printAnswer();
+    }
+
+    private void getAnswer(int index, int select) {
 
         if(m == select) {
-            result++;
+            answer++;
             return;
         }
 
@@ -39,12 +34,11 @@ public class Combination {
             return;
         }
 
-        solution(index + 1, select + 1);
-        solution(index + 1, select);
+        getAnswer(index + 1, select + 1);
+        getAnswer(index + 1, select);
     }
 
-    public static int print() {
-        System.out.println(result);
-        return result;
+    private void printAnswer() {
+        System.out.println(answer);
     }
 }
