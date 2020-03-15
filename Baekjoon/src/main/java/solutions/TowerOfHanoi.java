@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -10,6 +8,7 @@ import java.util.Stack;
  * Source : https://www.acmicpc.net/problem/11729
  * Desc : 하노이의 탑 최소 옮긴 횟수와 이동 경로를 출력하여라
  * Input : 원판의 갯수
+ * Output : 최소 경우의 수와 경로
  */
 public class TowerOfHanoi {
 
