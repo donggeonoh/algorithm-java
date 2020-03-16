@@ -30,6 +30,17 @@ public class TowerOfHanoi {
 		}
 	}
 
+	private static void getAnswer(int from, int to, int n) {
+		if(n == 1) {
+			storeRoute(from, to);
+			return;
+		}
+
+		getAnswer(from, 6 - from - to, n - 1);
+		storeRoute(from, to);
+		getAnswer(6 - from - to, to, n - 1);
+	}
+
 	private static void getAnswerByRF(int from, int by, int to, int n) {
 		if (n == 1) {
 			answer++;
@@ -81,22 +92,27 @@ public class TowerOfHanoi {
 		}
 	}
 
-	private static void storeRoute(int from, int to) {
-		sb.append(from + 1).append(" ").append(to + 1).append("\n");
+	public void printAns() {
+		getAnswer(0, 2, plate);
+		printAnswer();
 	}
 
-	public static void printAnswerByRF() {
+	public void printAnswerByRF() {
 		getAnswerByRF(0, 1, 2, plate);
 		printAnswer();
 	}
 
-	public static void printAnswerByStack() {
+	public void printAnswerByStack() {
 		getAnswerByStack(0, 1, 2, plate);
 		printAnswer();
 	}
 
-	private static void printAnswer() {
+	private void printAnswer() {
 		System.out.println(answer);
 		System.out.println(sb);
+	}
+
+	private static void storeRoute(int from, int to) {
+		sb.append(from + 1).append(" ").append(to + 1).append("\n");
 	}
 }

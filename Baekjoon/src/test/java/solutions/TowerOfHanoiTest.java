@@ -17,11 +17,12 @@ public class TowerOfHanoiTest {
 	@Test
 	public void solution() {
 		try {
-			Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input11729.txt"));
-			for(int testcases = 0; testcases < 3; testcases++) {
+			Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/TowerOfHanoiInput.txt"));
+			int testcases = sc.nextInt();
+			for(int cases = 0; cases < testcases; cases++) {
 				int input = sc.nextInt();
 				TowerOfHanoi solution = new TowerOfHanoi(input);
-				solution.printAnswerByStack();
+				solution.printAnswerByRF();
 			}
 			sc.close();
 		} catch (FileNotFoundException e) {

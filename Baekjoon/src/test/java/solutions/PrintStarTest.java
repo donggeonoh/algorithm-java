@@ -2,9 +2,9 @@ package solutions;
 
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 /**
  * Created by ohdonggeon on 2020/03/15 8:28 PM
@@ -13,17 +13,13 @@ import java.io.InputStreamReader;
 public class PrintStarTest {
 
 	@Test
-	public void printSolution() {
-		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-			int input = Integer.parseInt(reader.readLine());
+	public void printSolution() throws FileNotFoundException {
+		Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/PrintStarInput.txt"));
+		int testcases = sc.nextInt();
 
-			PrintStar solution = new PrintStar(input);
-			solution.printSolution();
-
-			reader.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+		for(int cases = 0; cases < testcases; cases++) {
+			PrintStar star = new PrintStar(sc.nextInt());
+			star.printSolution();
 		}
 	}
 }
