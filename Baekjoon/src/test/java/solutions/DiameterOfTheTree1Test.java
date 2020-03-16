@@ -17,7 +17,7 @@ public class DiameterOfTheTree1Test {
 
     public List<List<MyNode>> getInput() throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input1167.txt"));
+        Scanner scanner = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/DiameterOfTheTree1Input.txt"));
 
         int nodeNum = scanner.nextInt();
         List<List<MyNode>> nodes = new ArrayList<>();

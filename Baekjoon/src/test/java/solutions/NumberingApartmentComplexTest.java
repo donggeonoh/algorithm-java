@@ -11,7 +11,7 @@ public class NumberingApartmentComplexTest {
     @Test
     public void solution() throws FileNotFoundException {
         NumberingApartmentComplex numberingApartmentComplex = new NumberingApartmentComplex();
-        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input2667.txt"));
+        Scanner scanner = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/NumberingApartmentComplexInput.txt"));
 
         int size = scanner.nextInt();
         int[][] testcase = new int[size][size];

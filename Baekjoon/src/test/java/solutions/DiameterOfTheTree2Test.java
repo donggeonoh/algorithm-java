@@ -11,7 +11,7 @@ public class DiameterOfTheTree2Test {
     @Test
     public void test() throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input1967.txt"));
+        Scanner scanner = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/DiameterOfTheTree2Input.txt"));
 
         int num = scanner.nextInt();
         int[][] input = new int[num - 1][3];

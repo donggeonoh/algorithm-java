@@ -10,9 +10,9 @@ public class PermutationTest {
 
     @Test
     public void solution() throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input10974.txt"));
-
-        for(int i = 0; i < 3; i++) {
+        Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/PermutationInput.txt"));
+        int testcases = sc.nextInt();
+        for(int cases = 0; cases < testcases; cases++) {
             System.out.print("number : ");
             int num = sc.nextInt();
             System.out.println(num);

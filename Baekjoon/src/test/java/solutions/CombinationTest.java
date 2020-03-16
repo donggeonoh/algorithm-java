@@ -2,27 +2,23 @@ package solutions;
 
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class CombinationTest {
-    @Test
-    public void solution() {
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
+	@Test
+	public void solution() throws FileNotFoundException {
+        Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/CombinationInput.txt"));
+        int testcases = sc.nextInt();
 
-            int n = Integer.parseInt(tokenizer.nextToken());
-            int m = Integer.parseInt(tokenizer.nextToken());
+        for(int cases = 0; cases < testcases; cases++) {
+            int n = sc.nextInt();
+            int m = sc.nextInt();
 
             Combination combination = new Combination(n, m);
             combination.printSolution();
-
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-    }
+        sc.close();
+	}
 }

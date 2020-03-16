@@ -16,7 +16,7 @@ public class ConfettiTest {
         Scanner scanner = null;
 
         try {
-            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input17136.txt"));
+            scanner = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/ConfettiInput.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

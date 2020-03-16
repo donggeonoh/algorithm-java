@@ -13,8 +13,9 @@ public class DFSAndBFSTest {
 
     @Test
     public void solution() throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("/Users/donggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/Input1260.txt"));
-        for (int testcase = 0; testcase < 3; testcase++) {
+        Scanner sc = new Scanner(new File("/Users/ohdonggeon/Sources/Algorithm/Baekjoon/src/test/java/testcases/DFSAndBFSInput.txt"));
+        int testcase = sc.nextInt();
+        for (int cases = 0; cases < 3; cases++) {
             int vertex = sc.nextInt();
             int edge = sc.nextInt();
             int startVertex = sc.nextInt();
@@ -37,14 +38,6 @@ public class DFSAndBFSTest {
 
             for (int i = 0; i <= vertex; i++) {
                 Collections.sort(input.get(i));
-            }
-
-            for (int i = 0; i < input.size(); i++) {
-                System.out.println("node : " + i);
-                for (int j = 0; j < input.get(i).size(); j++) {
-                    System.out.print(input.get(i).get(j) + " ");
-                }
-                System.out.println();
             }
 
             System.out.println("===RESULT===");

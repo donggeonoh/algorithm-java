@@ -22,16 +22,16 @@ public class FibonacciNumber {
 	}
 
 	public void printSolution() {
-		System.out.println(getAnswer(input));
+		System.out.println(getSolution(input));
 	}
 
-	private int getAnswer(int input) {
+	private int getSolution(int input) {
 		if (input == 1) {
 			return 1;
 		} else if (input == 0) {
 			return 0;
 		}
 
-		return getAnswer(input - 1) + getAnswer(input - 2);
+		return getSolution(input - 1) + getSolution(input - 2);
 	}
 }
