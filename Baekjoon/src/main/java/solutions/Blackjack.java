@@ -30,13 +30,36 @@ public class Blackjack {
 	}
 
 	public int getAnswer() {
-		getAnswer(0, 0, 0);
+		boolean[] visited = new boolean[cardSize];
+		getAnswer(0, 0, 0, visited);
 		return answer;
 	}
 
-	private void getAnswer(int index) {
-		for(int i = 0; i < cardSize; i++) {
+	private void getAnswer(int value, int index, int pick, boolean[] visited) {
 
+		if(value > limit || index == cardSize) {
+			return;
+		}
+
+		if(visited[index]) {
+			return;
+		}
+
+		if(pick == PICK_NUMBER) {
+			if(answer < value) {
+				answer = value;
+			}
+			return;
+		}
+
+		for(int i = 0; i < cardSize; i++) {
+			visited[index] = true;
+			value += cards[index];
+			getAnswer(value + cards[index], index + 1, pick + 1, visited);
+
+			visited[index] = false;
+			value -= cards[index];
+			getAnswer(value, index + 1, pick, visited);
 		}
 	}
 
@@ -50,8 +73,12 @@ public class Blackjack {
 			return;
 		}
 
-		getAnswer(value + cards[index], index + 1, pick + 1);
-		getAnswer(value, index + 1, pick);
+		for (int i = 0; i < cardSize; i++) {
+			getAnswer(value + cards[i], 0, pick + 1);
+		}
+
+		/*getAnswer(value + cards[index], index + 1, pick + 1);
+		getAnswer(value, index + 1, pick);*/
 	}
 }
 
