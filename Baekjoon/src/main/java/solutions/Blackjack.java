@@ -34,24 +34,24 @@ public class Blackjack {
 		return answer;
 	}
 
+	private void getAnswer(int index) {
+		for(int i = 0; i < cardSize; i++) {
+
+		}
+	}
+
 	private void getAnswer(int value, int index, int pick) {
-		if (value > limit || index == cardSize) {
+		if (index == cardSize || value > limit) {
 			return;
 		}
 
 		if (pick == PICK_NUMBER) {
-			compareAndSetAnswer(value);
+			answer = Math.max(answer, value);
 			return;
 		}
 
 		getAnswer(value + cards[index], index + 1, pick + 1);
 		getAnswer(value, index + 1, pick);
-	}
-
-	private void compareAndSetAnswer(int value) {
-		if (answer < value) {
-			answer = value;
-		}
 	}
 }
 
