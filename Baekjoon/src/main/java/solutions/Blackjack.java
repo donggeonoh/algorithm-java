@@ -22,6 +22,7 @@ public class Blackjack {
 	private final int[] cards;
 
 	private static int answer;
+	private static int value;
 
 	Blackjack(int cardSize, int limit, int[] cards) {
 		this.cardSize = cardSize;
@@ -30,8 +31,27 @@ public class Blackjack {
 	}
 
 	public int getAnswer() {
-		getAnswer(0, 0, 0, new boolean[cardSize]);
+		//getAnswer(0, 0, 0, new boolean[cardSize]);
+		combination(0, 0);
 		return answer;
+	}
+
+	private void combination(int index, int selected) {
+		if(selected == PICK_NUMBER) {
+			if(value <= limit) {
+				answer = Math.max(answer, value);
+			}
+			return;
+		}
+
+		if(index == cardSize) {
+			return;
+		}
+
+		value += cards[index];
+		combination(index + 1, selected + 1);
+		value -= cards[index];
+		combination(index + 1, selected);
 	}
 
 	private void getAnswer(int value, int cur, int pick, boolean[] visited) {
