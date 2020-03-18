@@ -30,56 +30,32 @@ public class Blackjack {
 	}
 
 	public int getAnswer() {
-		boolean[] visited = new boolean[cardSize];
-		getAnswer(0, 0, 0, visited);
+		getAnswer(0, 0, 0, new boolean[cardSize]);
 		return answer;
 	}
 
-	private void getAnswer(int value, int index, int pick, boolean[] visited) {
-
-		if(value > limit || index == cardSize) {
-			return;
-		}
-
-		if(visited[index]) {
+	private void getAnswer(int value, int cur, int pick, boolean[] visited) {
+		if(value > limit || pick > PICK_NUMBER) {
 			return;
 		}
 
 		if(pick == PICK_NUMBER) {
-			if(answer < value) {
-				answer = value;
-			}
-			return;
-		}
-
-		for(int i = 0; i < cardSize; i++) {
-			visited[index] = true;
-			value += cards[index];
-			getAnswer(value + cards[index], index + 1, pick + 1, visited);
-
-			visited[index] = false;
-			value -= cards[index];
-			getAnswer(value, index + 1, pick, visited);
-		}
-	}
-
-	private void getAnswer(int value, int index, int pick) {
-		if (index == cardSize || value > limit) {
-			return;
-		}
-
-		if (pick == PICK_NUMBER) {
 			answer = Math.max(answer, value);
-			return;
 		}
 
-		for (int i = 0; i < cardSize; i++) {
-			getAnswer(value + cards[i], 0, pick + 1);
+		for(int index = cur; index < cardSize; index++) {
+			if(visited[index]) {
+				return;
+			}
+			value += cards[index];
+			pick++;
+			visited[index] = true;
+			getAnswer(value, index + 1, pick, visited);
+			value -= cards[index];
+			pick--;
+			visited[index] = false;
 		}
-
-		/*getAnswer(value + cards[index], index + 1, pick + 1);
-		getAnswer(value, index + 1, pick);*/
-	}
+ 	}
 }
 
 class Main {
