@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.Scanner;
-
 /**
  * Created by ohdonggeon on 2020/03/18 8:56 PM
  * Dankook UNIV. Computer Science
@@ -10,14 +8,6 @@ import java.util.Scanner;
  * Input : 숫자 N
  * Output : 분해합
  */
-
-class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		DecompositionSum decompositionSum = new DecompositionSum(sc.nextInt());
-		System.out.println(decompositionSum.getSolution());
-	}
-}
 public class DecompositionSum {
 
 	private final int input;
