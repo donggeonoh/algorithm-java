@@ -1,10 +1,5 @@
 package solutions;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
 /**
  * Created by ohdonggeon on 2020/03/17 8:20 PM
  * Dankook UNIV. Computer Science
@@ -76,24 +71,4 @@ public class Blackjack {
 			visited[index] = false;
 		}
  	}
-}
-
-class Main {
-	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-
-		int cardSize = Integer.parseInt(tokenizer.nextToken());
-		int limit = Integer.parseInt(tokenizer.nextToken());
-		int[] cards = new int[cardSize];
-
-		StringTokenizer cardTokenizer = new StringTokenizer(reader.readLine());
-
-		for (int index = 0; index < cardSize; index++) {
-			cards[index] = Integer.parseInt(cardTokenizer.nextToken());
-		}
-
-		Blackjack blackjack = new Blackjack(cardSize, limit, cards);
-		System.out.println(blackjack.getAnswer());
-	}
 }
