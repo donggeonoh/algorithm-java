@@ -21,15 +21,46 @@ public class Bulky {
 		this.height = height;
 		this.size = size;
 		this.answer = new int[size];
+
+		for (int index = 0; index < size; index++) {
+			answer[index] = 1;
+		}
 	}
 
+	//재귀
+	public int[] getAnswer(int outer, int inner) {
+		if (outer == size) {
+			return answer;
+		}
+
+		if (inner == size) {
+			return getAnswer(outer + 1, 0);
+		}
+
+		if (weight[outer] > weight[inner]) {
+			if (height[outer] > height[inner]) {
+				answer[inner]++;
+			}
+		}
+
+		return getAnswer(outer, inner + 1);
+	}
+
+	//포문
 	public int[] getAnswer() {
-		getAnswer(0, 0);
+		for (int outer = 0; outer < size; outer++) {
+			for (int inner = 0; inner < size; inner++) {
+				if (outer == inner) {
+					continue;
+				}
+
+				if (weight[outer] > weight[inner]) {
+					if (height[outer] > height[inner]) {
+						answer[inner]++;
+					}
+				}
+			}
+		}
 		return answer;
 	}
-
-	private void getAnswer(int index, int selected) {
-
-	}
-
 }

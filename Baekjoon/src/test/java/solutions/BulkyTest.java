@@ -31,7 +31,7 @@ public class BulkyTest {
 			}
 
 			Bulky bulky = new Bulky(weight, height, size);
-			int[] answer = bulky.getAnswer();
+			int[] answer = bulky.getAnswer(0, 0);
 			System.out.println(Arrays.toString(answer));
 
 			for(int value = 0; value < size; value++) {
