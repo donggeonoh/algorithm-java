@@ -13,7 +13,30 @@ import java.util.StringTokenizer;
  */
 public class Chess {
 
-	private char[][] board;
+	private static final char[][] W_CHESS = {
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'}};
+
+	private static final char[][] B_CHESS = {
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'},
+			{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'},
+			{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'}};
+
+	private static final int SIZE_CHESS = 8;
+	private static int answer = Integer.MAX_VALUE;
+
+	private final char[][] board;
 
 	private final int row;
 	private final int col;
@@ -25,8 +48,34 @@ public class Chess {
 	}
 
 	public int getAnswer() {
+		int rangeRow = row - SIZE_CHESS;
+		int rangeCol = col - SIZE_CHESS;
 
-		return 0;
+		for (int bRow = 0; bRow <= rangeRow; bRow++) {
+			for (int bCol = 0; bCol <= rangeCol; bCol++) {
+				int repainted = Math.min(getRepainted(bRow, bCol, W_CHESS), getRepainted(bRow, bCol, B_CHESS));
+
+				if (answer > repainted) {
+					answer = repainted;
+				}
+			}
+		}
+
+		return answer;
+	}
+
+	private int getRepainted(int row, int col, char[][] chess) {
+		int repainted = 0;
+
+		for (int bRow = row, cRow = 0; cRow < SIZE_CHESS; bRow++, cRow++) {
+			for (int bCol = col, cCol = 0; cCol < SIZE_CHESS; bCol++, cCol++) {
+				if (board[bRow][bCol] != chess[cRow][cCol]) {
+					repainted++;
+				}
+			}
+		}
+
+		return repainted;
 	}
 }
 
@@ -40,14 +89,16 @@ class Main {
 
 		char[][] board = new char[row][col];
 
-		for(int i = 0; i < row; i++) {
+		for (int i = 0; i < row; i++) {
 			String temp = reader.readLine();
-			for(int j = 0; j < col; j++) {
+			for (int j = 0; j < col; j++) {
 				board[i][j] = temp.charAt(j);
 			}
 		}
 
-		Chess chess = new Chess(row, col, board);
+		Chess chess = new Chess(board, row, col);
 		System.out.println(chess.getAnswer());
+
+		reader.close();
 	}
 }
