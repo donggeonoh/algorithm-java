@@ -18,7 +18,7 @@ public class Chess {
 	private final int row;
 	private final int col;
 
-	Chess(int row, int col, char[][] board) {
+	Chess(char[][] board, int row, int col) {
 		this.board = board;
 		this.row = row;
 		this.col = col;

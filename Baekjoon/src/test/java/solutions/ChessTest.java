@@ -32,7 +32,7 @@ public class ChessTest {
 					board[i][j] = temp.charAt(j);
 				}
 			}
-			Chess chess = new Chess(row, col, board);
+			Chess chess = new Chess(board, row, col);
 			tokenizer = new StringTokenizer(reader.readLine());
 
 			int expected = chess.getAnswer();
