@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.Scanner;
-
 /**
  * Created by ohdonggeon on 2020/03/24 9:52 PM
  * Dankook UNIV. Computer Science
@@ -34,17 +32,5 @@ public class MovieDirectorShawm {
 		}
 
 		return Integer.parseInt(answer);
-	}
-}
-
-class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int input = sc.nextInt();
-
-		MovieDirectorShawm shawm = new MovieDirectorShawm(input);
-		System.out.println(shawm.getAnswer());
-
-		sc.close();
 	}
 }
