@@ -1,8 +1,5 @@
 package solutions;
 
-import java.io.*;
-import java.util.StringTokenizer;
-
 /**
  * Created by ohdonggeon on 2020/03/23 7:40 PM
  * Dankook UNIV. Computer Science
@@ -76,29 +73,5 @@ public class Chess {
 		}
 
 		return repainted;
-	}
-}
-
-class Main {
-	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-
-		int row = Integer.parseInt(tokenizer.nextToken());
-		int col = Integer.parseInt(tokenizer.nextToken());
-
-		char[][] board = new char[row][col];
-
-		for (int i = 0; i < row; i++) {
-			String temp = reader.readLine();
-			for (int j = 0; j < col; j++) {
-				board[i][j] = temp.charAt(j);
-			}
-		}
-
-		Chess chess = new Chess(board, row, col);
-		System.out.println(chess.getAnswer());
-
-		reader.close();
 	}
 }
