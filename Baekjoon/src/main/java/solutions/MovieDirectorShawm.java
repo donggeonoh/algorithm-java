@@ -12,28 +12,28 @@ import java.util.Scanner;
  */
 public class MovieDirectorShawm {
 
-
 	private final int input;
 
-	private static int devilNumber = 666;
-	private static int answer = 0;
+	private static String answer = "666";
 
 	MovieDirectorShawm(int input) {
 		this.input = input;
 	}
 
 	public int getAnswer() {
-		getDevilNumber(0);
+		int times = 0;
 
-		return answer;
-	}
-
-	private void getDevilNumber(int times) {
-		if(input == times) {
-			return;
+		while (times != input) {
+			if (answer.contains("666")) {
+				if (times + 1 == input) {
+					break;
+				}
+				times++;
+			}
+			answer = String.valueOf(Integer.parseInt(answer) + 1);
 		}
 
-
+		return Integer.parseInt(answer);
 	}
 }
 
