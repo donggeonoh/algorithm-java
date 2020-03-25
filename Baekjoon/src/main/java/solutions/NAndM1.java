@@ -1,11 +1,5 @@
 package solutions;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
 /**
  * Created by ohdonggeon on 2020/03/25 9:36 PM
  * Dankook UNIV. Computer Science
@@ -26,20 +20,23 @@ public class NAndM1 {
 	public static void printAnswer(int n, int m) {
 		range = n;
 		sequence = new int[m];
+
 		getSequence(0);
 	}
 
 	private static void getSequence(int index) {
 		if(index == sequence.length) {
-			System.out.println(Arrays.toString(sequence));
+			for(int element : sequence) {
+				System.out.print(element + " ");
+			}
+			System.out.println();
 			return;
 		}
 
-		for(int seqNum = 1; seqNum < sequence.length; seqNum++) {
+		for(int seqNum = 1; seqNum <= range; seqNum++) {
 			if(isPossible(index, seqNum)) {
+				sequence[index] = seqNum;
 				getSequence(index + 1);
-			} else {
-				break;
 			}
 		}
 	}
@@ -52,19 +49,5 @@ public class NAndM1 {
 		}
 
 		return true;
-	}
-}
-
-class Main {
-	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-
-		int n = Integer.parseInt(tokenizer.nextToken());
-		int m = Integer.parseInt(tokenizer.nextToken());
-
-		NAndM1.printAnswer(n, m);
-
-		reader.close();
 	}
 }
