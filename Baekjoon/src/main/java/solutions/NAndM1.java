@@ -25,16 +25,16 @@ public class NAndM1 {
 	}
 
 	private static void getSequence(int index) {
-		if(index == sequence.length) {
-			for(int element : sequence) {
+		if (index == sequence.length) {
+			for (int element : sequence) {
 				System.out.print(element + " ");
 			}
 			System.out.println();
 			return;
 		}
 
-		for(int seqNum = 1; seqNum <= range; seqNum++) {
-			if(isPossible(index, seqNum)) {
+		for (int seqNum = 1; seqNum <= range; seqNum++) {
+			if (isPossible(index, seqNum)) {
 				sequence[index] = seqNum;
 				getSequence(index + 1);
 			}
@@ -42,8 +42,8 @@ public class NAndM1 {
 	}
 
 	private static boolean isPossible(int index, int seqNum) {
-		for(int seqIndex = 0; seqIndex < index; seqIndex++) {
-			if(sequence[seqIndex] == seqNum) {
+		for (int seqIndex = 0; seqIndex < index; seqIndex++) {
+			if (sequence[seqIndex] == seqNum) {
 				return false;
 			}
 		}

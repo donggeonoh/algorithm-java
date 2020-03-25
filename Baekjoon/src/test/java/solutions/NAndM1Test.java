@@ -28,7 +28,7 @@ public class NAndM1Test {
 
 		System.out.println("====== ACTUAL ======");
 
-		for(int i = 0; i < 24; i++) {
+		for (int i = 0; i < 24; i++) {
 			System.out.println(reader.readLine());
 		}
 
