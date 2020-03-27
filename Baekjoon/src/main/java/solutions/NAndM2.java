@@ -32,8 +32,9 @@ public class NAndM2 {
 	private static void getSequence(int index, int count) {
 		if(index == length) {
 			for(int element : answer) {
-				System.out.println(element);
+				System.out.print(element + " ");
 			}
+			System.out.println();
 			return;
 		}
 
