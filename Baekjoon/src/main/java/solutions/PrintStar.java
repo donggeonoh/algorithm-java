@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 /**
  * Created by ohdonggeon on 2020/03/15 8:12 PM
  * Dankook UNIV. Computer Science
- * Source : https://www.acmicpc.net/step/19
+ * Source : https://www.acmicpc.net/problem/2447
  * Desc : 별 찍기 (재귀함수 이용)
  * input : 숫자 N (N은 3의 거듭제곱 ex 3^x)
  * output : 재귀 패턴 출력
