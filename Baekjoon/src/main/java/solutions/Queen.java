@@ -39,14 +39,21 @@ public class Queen {
 			return;
 		}
 
-		for(int boardRow = row; boardRow < SIZE; boardRow++) {
-			for(int boardCol = col; boardCol < SIZE; boardCol++) {
-				if(isPossible(boardRow, boardCol)) {
-					chessboard[boardRow][boardCol] = QUEEN_EXIST;
-					getNumberOfCases(queen + 1, boardRow + 1, boardCol + 1);
-					chessboard[boardRow][boardCol] = QUEEN_NOT_EXIST;
-				}
-			}
+		if(col == SIZE) {
+			getNumberOfCases(queen, row + 1, 0);
+			return;
+		}
+
+		if(row == SIZE) {
+			return;
+		}
+
+		if(isPossible(row, col)) {
+			chessboard[row][col] = QUEEN_EXIST;
+			getNumberOfCases(queen + 1, row, col + 1);
+			chessboard[row][col] = QUEEN_NOT_EXIST;
+		} else {
+			getNumberOfCases(queen, row, col + 1);
 		}
 	}
 
@@ -54,16 +61,16 @@ public class Queen {
 		for(int boardRow = 0; boardRow < SIZE; boardRow++) {
 			for(int boardCol = 0; boardCol < SIZE; boardCol++) {
 				if(chessboard[boardRow][boardCol] == QUEEN_EXIST) {
-					double value = Math.abs((double) (boardCol - col) / (boardRow - row));
-					System.out.println(value);
-					if(value == 0 || value == 1) {
-						System.out.println("false");
+					if(boardRow == row || boardCol == col) {
+						return false;
+					}
+					double slope = Math.abs((double) (row - boardRow) / (col - boardCol));
+					if(slope == 1) {
 						return false;
 					}
 				}
 			}
 		}
-
 		return true;
 	}
 }
