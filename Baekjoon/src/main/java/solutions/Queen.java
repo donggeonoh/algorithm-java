@@ -15,6 +15,7 @@ public class Queen {
 	private static final double VERTICAL = 0;
 	private static final double DIAGONAL = 1;
 
+	// element : row에 대해 queen이 위치한 col
 	private static int[] chessboard;
 	private static int length = 0;
 
@@ -40,15 +41,16 @@ public class Queen {
 		}
 
 		for (int col = 0; col < length; col++) {
-			if (isPossible(row, col)) {
+			if (isValidate(row, col)) {
 				chessboard[row] = col;
 				getNumberOfCases(row + 1);
 			}
 		}
 	}
 
-	private static boolean isPossible(int row, int col) {
+	private static boolean isValidate(int row, int col) {
 		for (int boardRow = 0; boardRow < row; boardRow++) {
+			//직선의 기울기 (y2 - y1) / (x2 - x1)
 			double value = Math.abs(getSlopeOfTwoPoints(col, chessboard[boardRow], row, boardRow));
 
 			if (value == VERTICAL || value == DIAGONAL) {
