@@ -40,7 +40,7 @@ public class Queen {
 		}
 
 		for (int col = 0; col < length; col++) {
-			if(isPossible(row, col)) {
+			if (isPossible(row, col)) {
 				chessboard[row] = col;
 				getNumberOfCases(row + 1);
 			}
@@ -48,10 +48,10 @@ public class Queen {
 	}
 
 	private static boolean isPossible(int row, int col) {
-		for(int boardRow = 0; boardRow < row; boardRow++) {
+		for (int boardRow = 0; boardRow < row; boardRow++) {
 			double value = Math.abs(getSlopeOfTwoPoints(col, chessboard[boardRow], row, boardRow));
 
-			if(value == VERTICAL || value == DIAGONAL) {
+			if (value == VERTICAL || value == DIAGONAL) {
 				return false;
 			}
 		}
