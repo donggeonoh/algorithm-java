@@ -1,6 +1,6 @@
 package solutions;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Created by ohdonggeon on 2020/04/01 8:57 PM
@@ -12,71 +12,63 @@ import java.util.Arrays;
  */
 public class Queen {
 
-	private static int QUEEN_EXIST = 1;
-	private static int QUEEN_NOT_EXIST = 0;
-	private static int SIZE;
+	private static final double VERTICAL = 0;
+	private static final double DIAGONAL = 1;
 
-	private static int[][] chessboard;
+	private static int[] chessboard;
+	private static int length = 0;
+
 	private static int answer = 0;
 
 	private Queen() {
 
 	}
 
-	public static int getSolution(int queen) {
-		chessboard = new int[queen][queen];
-		SIZE = queen;
+	public static int getAnswer(int numQueen) {
+		chessboard = new int[numQueen];
+		length = numQueen;
 
-		getNumberOfCases(0, 0, 0);
+		getNumberOfCases(0);
 
 		return answer;
 	}
 
-	private static void getNumberOfCases(int queen, int row, int col) {
-		if (queen == SIZE) {
-			System.out.println(Arrays.deepToString(chessboard));
+	private static void getNumberOfCases(int row) {
+		if (row == length) {
 			answer++;
 			return;
 		}
 
-		if(col == SIZE) {
-			getNumberOfCases(queen, row + 1, 0);
-			return;
-		}
-
-		if(row == SIZE) {
-			return;
-		}
-
-		if(isPossible(row, col)) {
-			chessboard[row][col] = QUEEN_EXIST;
-			getNumberOfCases(queen + 1, row, col + 1);
-			chessboard[row][col] = QUEEN_NOT_EXIST;
-		} else {
-			getNumberOfCases(queen, row, col + 1);
+		for (int col = 0; col < length; col++) {
+			if(isPossible(row, col)) {
+				chessboard[row] = col;
+				getNumberOfCases(row + 1);
+			}
 		}
 	}
 
 	private static boolean isPossible(int row, int col) {
-		for(int boardRow = 0; boardRow < SIZE; boardRow++) {
-			for(int boardCol = 0; boardCol < SIZE; boardCol++) {
-				if(chessboard[boardRow][boardCol] == QUEEN_EXIST) {
-					if(boardRow == row || boardCol == col) {
-						return false;
-					}
-					double slope = Math.abs((double) (row - boardRow) / (col - boardCol));
-					if(slope == 1) {
-						return false;
-					}
-				}
+		for(int boardRow = 0; boardRow < row; boardRow++) {
+			double value = Math.abs(getSlopeOfTwoPoints(col, chessboard[boardRow], row, boardRow));
+
+			if(value == VERTICAL || value == DIAGONAL) {
+				return false;
 			}
 		}
+
 		return true;
+	}
+
+	private static double getSlopeOfTwoPoints(int col, int boardCol, int row, int boardRow) {
+		return (double) (col - boardCol) / (row - boardRow);
 	}
 }
 
 class Main {
 	public static void main(String[] args) {
-		System.out.println(Queen.getSolution(4));
+		Scanner sc = new Scanner(System.in);
+		System.out.println(Queen.getAnswer(sc.nextInt()));
+
+		sc.close();
 	}
 }
