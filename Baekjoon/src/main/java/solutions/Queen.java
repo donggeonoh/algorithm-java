@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.Scanner;
-
 /**
  * Created by ohdonggeon on 2020/04/01 8:57 PM
  * Dankook UNIV. Computer Science
@@ -28,6 +26,7 @@ public class Queen {
 	public static int getAnswer(int numQueen) {
 		chessboard = new int[numQueen];
 		length = numQueen;
+		answer = 0;
 
 		getNumberOfCases(0);
 
@@ -63,14 +62,5 @@ public class Queen {
 
 	private static double getSlopeOfTwoPoints(int col, int boardCol, int row, int boardRow) {
 		return (double) (col - boardCol) / (row - boardRow);
-	}
-}
-
-class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println(Queen.getAnswer(sc.nextInt()));
-
-		sc.close();
 	}
 }
