@@ -1,11 +1,6 @@
 package solutions;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 
 /**
  * Created by ohdonggeon on 2020/04/03 8:59 PM
@@ -49,32 +44,5 @@ public class Virus {
 		for(int linkedNodeNum = 0; linkedNodeNum < graph.get(index).size(); linkedNodeNum++) {
 			getAnswer(graph.get(index).get(linkedNodeNum));
 		}
-	}
-}
-
-class Main {
-	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-		int nodeNum = Integer.parseInt(reader.readLine());
-		int edgeNum = Integer.parseInt(reader.readLine());
-		List<List<Integer>> graph = new ArrayList<>();
-
-		for(int size = 0; size <= nodeNum; size++) {
-			graph.add(new ArrayList<>());
-		}
-
-		for(int size = 0; size < edgeNum; size++) {
-			StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-			int node = Integer.parseInt(tokenizer.nextToken());
-			int linkedNode = Integer.parseInt(tokenizer.nextToken());
-
-			graph.get(node).add(linkedNode);
-			graph.get(linkedNode).add(node);
-		}
-
-		System.out.println(Virus.getAnswer(graph, nodeNum, edgeNum));
-
-		reader.close();
 	}
 }
